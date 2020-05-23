@@ -45,9 +45,9 @@ body{
 /* верхняя часть с логотипом и навигацией
 ========================= */
 .logo {
-  margin-top: 32.46px;
+  margin-top: 32px;
   margin-right: 45px; 
-  margin-bottom: 28.5px; 
+  margin-bottom: 29px; 
   margin-left: 0;
   width: 55px;
   height: 55px;
@@ -57,9 +57,9 @@ body{
 ========================= */
 .nav {
   display: inline-block;
-  padding-top: 54.02px;
-  padding-right: 81.07px;
-  padding-bottom:  49.93px;
+  padding-top: 54px;
+  padding-right: 81px;
+  padding-bottom: 50px;
   padding-left: 0;
 }
 
@@ -67,7 +67,7 @@ body{
 ========================= */
 .nav__second {
   display: inline-block;
-  padding: 54.02px 0 49.93px 0;
+  padding: 54px 0 50px 0;
   vertical-align: middle;
 }
 
@@ -86,9 +86,9 @@ body{
 /* форма поиска по сайту в виде кнопки
 ========================= */
 .btn {
-  width: 177.93px;
-  height: 24.04px;
-  margin: 48.02px 35px 43.93px 0;
+  width: 178px;
+  height: 24px;
+  margin: 48px 35px 44px 0;
   padding: 0;
   border-left: none;
   border-top: none;
@@ -99,16 +99,16 @@ body{
 
 .btn-img {
   float: right;
-  padding-top: 5.02px;
-  padding-right: 1.43px;
-  padding-bottom: 5.02px;
+  padding-top: 5px;
+  padding-right: 1px;
+  padding-bottom: 5px;
 }
  
 /* ссылка меню с покупной корзиной
 ========================= */
 
 .nav__link-cart {
-  padding-right: 3.95px;
+  padding-right: 4px;
   font-size: 12px;
 }
 
@@ -118,8 +118,8 @@ body{
   display: inline-block;
   font-size: 10px;
   line-height: 13px;
-  width: 14.92px;
-  height: 14.92px;
+  width: 15px;
+  height: 15px;
   background: black;
   border-radius: 50%;
   text-align: center;
@@ -138,9 +138,9 @@ body{
 }
 
 .usa-image{
-  padding-top: 3.45px;
+  padding-top: 3px;
   padding-right: 0;
-  padding-bottom: 3.45px;
+  padding-bottom: 3px;
   padding-left: 0;
 }
 
@@ -148,16 +148,16 @@ body{
 /* картинка головной части страницы
 ========================= */
 .header__img {
-  width: 1030px;
-  height: 280px;
+  max-width: 1030px;
+  max-height: 280px;
 } 
 
 .header__title {
   position: absolute;
-  width: 195px;
-  height: 86.94px;
-  left: calc(50% - 195px/2 - 357.92px);
-  top: 206.83px;
+  max-width: 195px;
+  max-height: 87px;
+  left: calc(50% - 195px/2 - 358px);
+  top: 207px;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -171,10 +171,10 @@ body{
 
 .header__txt{
   position: absolute;
-  width: 72px;
-  height: 11.99px;
-  left: calc(50% - 72px/2 - 419.42px);
-  top: 308.74px;
+  max-width: 72px;
+  max-height: 12px;
+  left: calc(50% - 72px/2 - 419px);
+  top: 309px;
   font-style: normal;
   font-weight: bold;
 /* identical to box height */
@@ -189,9 +189,9 @@ body{
 ========================= */
 .header__btn {
   position: absolute;
-  width: 45.74px;
-  height: 0px;
-  left: calc(50% - 45.74px/2 - 355px);
+  max-width: 46px;
+  height: 0;
+  left: calc(50% - 46px/2 - 355px);
   top: 309px;
   border: none;
   background: transparent;
@@ -210,8 +210,8 @@ body{
   text-align:  center;
   text-transform: uppercase;
   white-space: nowrap;
-  margin-top: 53.78px;
-  margin-bottom: 15.26px;
+  margin-top: 54px;
+  margin-bottom: 15px;
   padding-bottom: 1px;
 } 
 
@@ -225,27 +225,27 @@ body{
   box-sizing: border-box;
   display: inline-block;
   float: left;
-  width: 230px;
+  max-width: 230px;
   margin-bottom: 26px;
 }
 
 .column1 {
-  margin-right: 18.94px;
+  margin-right: 19px;
 }
 
 .column2 {
   margin-right: 18px;
-  margin-left: 18.06px;
+  margin-left: 18px;
 }
 
 .column3 {
-  margin-right: 18.15px;
+  margin-right: 18px;
   margin-left: 18px;
 }
 
 .column4 {
   margin-right: 0;
-  margin-left: 18.85px;
+  margin-left: 19px;
 }
 
 /* изображение товара
@@ -253,8 +253,8 @@ body{
 .col__img{
   margin-top: 0;
   margin-right:  19px;
-  margin-bottom: 23.67px;
-  margin-left: 23.14px;
+  margin-bottom: 24px;
+  margin-left: 23px;
 }
 
 /* описание товара
@@ -279,41 +279,76 @@ body{
   font-size: 14px;
   line-height: 13px;
   float: left;
-  width: 85.85px;
+  width: 86px;
   margin-top: 0;
-  margin-right: 66.15px;
-  margin-bottom: 20.64px;
+  margin-right: 66px;
+  margin-bottom: 21px;
   margin-left: 12px;
 }
 
 /* CIRCLE
 ******************************************* */
-.circle {
-  width: 54px;
-  margin-top: 4.12px;
-  margin-right: 12px;
-  display: flex;
-  justify-content: space-between;
+.section__item {
+  cursor: pointer;
 }
-
 
 .section__item_gray,
 .section__item_red,
 .section__item_yellow,
 .section__item_blue {
+  display: inline-block;
   width: 7px;
   height: 7px;
+  border-radius: 50%;
+  background: #c4c4c4; 
   border: none;
 }
 
+.section__item_gray{
+  background: #c4c4c4;
+  margin-right: 8px;
+}
+
+.section__item_red {
+  background: #b62e3c;
+  margin-right: 8px;
+}
+
+.section__item_yellow {
+  background: #fdb431;
+  margin-right: 0;
+}
+
+.section__item_blue {
+  background: #41479b;
+  margin-right: 8px;
+}
+
 .section__item_black,
-.section__item_creme,
-.section__item_brown,
+.section__item_peach,
+.section__item_burgundy,
 .section__item_lightblue {
+  display: inline-block;
   width: 9px;
   height: 9px;
-  border: none;	
+  background: #0e1211;
+  margin-right: 8px;
+  border-radius: 50%;
+  border: none;
 }
+
+.section__item_peach {
+  background: #e29d69;
+}
+
+.section__item_burgundy {
+  background: #b62e3c; 
+}
+
+.section__item_lightblue {
+  background: #257da9;
+}
+
 
 /* вертикальные линии
 ******************************************* */
@@ -321,14 +356,14 @@ body{
 .vertikal-two,
 .vertikal-three {
   position: absolute;
-  top: 528.34px;
+  top: 528px;
 }
 
 
 /* Media- запросы 
 ************************** */
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
 
   * {
 	margin: 0;
