@@ -9,98 +9,123 @@
 	</head>
 	<body>
     <header class="header">
-      <div class="header__block">
-        <img src="Axion-logo-1.jpg" class="logo">
-		    <div class="nav">
-          <a href="#" class="nav-link">shop</a>
-          <a href="#" class="nav-link">news</a>
-          <a href="#" class="nav-link">team</a>
-          <a href="#" class="nav-link">legacy</a>
-          <a href="#" class="nav-link">help</a>
-		      </div>
-        <form action="/search/" target="_blank" class="form-search">
-          <input type="hidden" name="searchid">
-          <input type="search" name="text" required placeholder="">
-          <input type="image" src="Vector.jpg" class="img-search">
-        </form>
-        <div class="nav">
-          <a href="#" class="nav-link">sign in</a>
-          <a href="#" class="nav-link">cart <img src="cart.svg" class="link-img"><img src="1.png" class="nav-img"></a>
-          <a href="#" class="nav-link"><img src="united-states.png" class="link-image"></a>
+      <div class="container">
+        <div class="header__block-left">
+          <div class="logo">
+            <img src="Axion-logo-1.jpg" alt="">
+          </div>
+		    <nav class="nav">
+          <a href="#" class="nav__link">shop</a>
+          <a href="#" class="nav__link">news</a>
+          <a href="#" class="nav__link">team</a>
+          <a href="#" class="nav__link">legacy</a>
+          <a href="#" class="nav__link">help</a>
+		    </nav>
         </div>
-        <div>
+        <div class="header__block-right">
+          <button class="btn">
+            <img src="Vector.jpg" class="btn-img">  
+          </button> 
+          <nav class="nav__second">
+            <a href="#" class="nav__link">sign in</a>
+            <a href="#" class="nav__link"><span class="nav__link-cart">cart</span><span class="nav__link-one">1</span></a>
+          </nav>
+            <button class="usa"><img src="united-states.png" class="usa-image"></button>
+          </div>
           <img src="rob-potter-422534-unsplash.jpg" class="header__img" />
           <h1 class="header__title">
             legendary<br/>
             footwear<br/>
             reborn.
           </h1>
-          <span class="header__txt">shop now</span>
+          <p class="header__txt">shop now</p>
             <button class="header__btn">
-              <img src="Arrow.png" class="btn-img"></img> 
+              <img src="Arrow top.png" class="btn__arrow">
             </button>
-        </div>
+            </div>
       </div>
     </header>
     <section class="section">
-      <h2 class="section__title">
-        feautered product  
-      </h2>
-      <div class="section__block">
-        <img src="shoes1.jpg" class="section__img">
-        <p class="section__item">
-          atlas black/rasta axion
-        </p> 
-        <p class="section__price">
-          $89.00
-        </p>
-        <img src="Ellipse3.png" class="section__item section__item_grey">
-        <img src="Ellipse2.png" class="section__item section__item_black">
-        <img src="Ellipse3.png" class="section__item section__item_red">
-        <img src="Ellipse3.png" class="section__item section__item_yellow">
-      </div>
-      <img src="vertikal.png" class="section__vertical">
-      <div>
-        <img src="shoes2.jpg" class="section__img">
-        <p class="section__item">
-          camel/chili pepper axion
-        </p> 
-        <p class="section__price">
-          $74.00
-        </p>
-        <img src="Ellipse3.png" class="section__item section__item_grey">
-        <img src="Ellipse2.png" class="section__item section__item_peach">
-        <img src="Ellipse3.png" class="section__item section__item_red">
-        <img src="Ellipse3.png" class="section__item section__item_yellow">
-      </div>
-      <img src="vertikal.png" class="section__vertical"> 
-      <div>
-        <img src="shoes3.jpg" class="section__img">
-        <p>
-          mandel smoke/rust axion
-        </p> 
-        <p class="section__price">
-          $69.00
-        </p>
-        <img src="Ellipse3.png" class="section__item section__item_grey">
-        <img src="Ellipse2.png" class="section__item section__item_burgundy">
-        <img src="Ellipse3.png" class="section__item section__item_blue">
-        <img src="Ellipse3.png" class="section__item section__item_yellow">
-      </div>
-      <img src="vertikal.png" class="section__vertical">
-      <div>
-        <img src="shoes4.jpg" class="section__img">
-        <p>
-          cloud/electric blue axion
-        </p> 
-        <p class="section__price">
-          $69.00
-        </p>
-        <img src="Ellipse3.png" class="section__item section__item_grey">
-        <img src="Ellipse2.png" class="section__item section__item_blue">
-        <img src="Ellipse3.png" class="section__item section__item_red">
-        <img src="Ellipse3.png" class="section__item section__item_yellow">
-      </div>    
+      <div class="container">
+        <div class="section__block">
+          <h2 class="section__title">
+            feautered product  
+          </h2>
+          <div class="wrap">
+              <figure class="column1">
+                <img src="shoes1.jpg" class="col__img" />
+                  <figcaption class="col__item">
+                    AtlasBlack/Rasta Axion
+                  </figcaption>
+                  <figcaption>
+                    <span class="section__price">
+                      $89.00
+                    </span>
+                    <span class="circle"> 
+                      <a href="#"><img src="EllipsGray.svg" class="section__item section__item_gray"></a>
+                      <a href="#"><img src="EllipseBlack.svg" class="section__item section__item_black"></a>
+                      <a href="#"><img src="EllipseRed.svg" class="section__item section__item_red"></a>
+                      <a href="#"><img src="EllipseYellow.svg" class="section__item section__item_yellow"></a>           
+                    </span>
+                  </figcaption>                 
+              </figure>
+          <img src="vertikal.png" class="vertikal-one">
+              <figure class="column2">
+                <img src="shoes2.jpg" class="col__img" /> 
+                  <figcaption class="col__item">
+                    Camel/Chili Pepper Axion
+                  </figcaption>
+                  <figcaption>
+                    <span class="section__price">
+                      $74.00
+                    </span>
+                    <span class="circle">
+                      <a href="#"><img src="EllipsGray.svg" class="section__item section__item_gray"></a>
+                      <a href="#"><img src="EllipseCreme.svg" class="section__item section__item_creme"></a>
+                      <a href="#"><img src="EllipseRed.svg" class="section__item section__item_red"></a>
+                      <a href="#"><img src="EllipseYellow.svg" class="section__item section__item_yellow"></a>
+                    </span>
+                  </figcaption>   
+              </figure>
+            <img src="vertikal.png" class="vertikal-two">       
+              <figure class="column3">
+                <img src="shoes3.jpg" class="col__img" />
+                <figcaption class="col__item">
+                    Mandel Smoke/Rust Axion
+                  </figcaption>
+                  <figcaption>
+                    <span class="section__price">
+                      $69.00
+                    </span>
+                    <span class="circle">
+                      <a href="#"><img src="EllipsGray.svg" class="section__item section__item_gray"></a>
+                      <a href="#"><img src="EllipseBrown.svg" class="section__item section__item_brown"></a>
+                      <a href="#"><img src="EllipseBlue.svg" class="section__item section__item_blue"></a>
+                      <a href="#"><img src="EllipseYellow.svg" class="section__item section__item_yellow"></a>
+                    </span>
+                  </figcaption>  
+              </figure>
+            <img src="vertikal.png" class="vertikal-three">
+              <figure class="column4">
+                <img src="shoes4.jpg" class="col__img" />
+                <figcaption class="col__item">
+                    Cloud/Electric Blue Axion
+                  </figcaption>
+                  <figcaption>
+                    <span class="section__price">
+                      $69.00
+                    </span>
+                    <span class="circle">
+                      <a href="#"><img src="EllipsGray.svg" class="section__item section__item_gray"></a>
+                      <a href="#"><img src="EllipseLightblue.svg" class="section__item section__item_lightblue"></a>
+                      <a href="#"><img src="EllipseRed.svg" class="section__item section__item_red"></a>
+                      <a href="#"><img src="EllipseYellow.svg" class="section__item section__item_yellow"></a>
+                    </span>
+                  </figcaption> 
+              </figure>         
+          </div>
+        </div>
+      </div>  
     </section>
     <main class="main">
       <img src="Rectangle 4.jpg" class="main__img">
@@ -130,7 +155,7 @@
       </h2>
       <div class="article__block">
         <img src="Rectangle1.jpg" class="article__img">
-        <h3 class="article__title">
+        <h3 class="article__block-title">
           Presents Justin Anagoa
         </h3> 
         <p class="article__txt">
@@ -153,7 +178,7 @@
       </div>
       <div class="article__block">
         <img src="Rectangle2.jpg" class="article__img">
-        <h3 class="article__title">
+        <h3 class="article__block-title">
           First Frontside Flip
         </h3> 
         <p class="article__txt">
@@ -176,7 +201,7 @@
       </div>
       <div class="article__block">
         <img src="Rectangle3.jpg" class="article__img">
-        <h3 class="article__title">
+        <h3 class="article__block-title">
           Kevin Baekkel Is Pro
         </h3> 
         <p class="article__txt">
