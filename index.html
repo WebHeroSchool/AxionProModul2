@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="./style.css">
     <link href="//db.onlinewebfonts.com/c/056353a27c68233bab7e618c8b191d65?family=Gotham+Pro" rel="stylesheet" type="text/css"/>
 	</head>
-	<body>
+	<body class="body">
     <header class="header">
       <div class="container">
         <div class="header__block-left">
-          <div class="logo">
-            <img src="img/Axion-logo-1.jpg" alt="">
+          <div>
+            <img src="img/Axion-logo-1.svg" class="logo">
+            <img src="img/logo768.svg" class="logo-burger">
           </div>
 		    <nav class="nav">
           <a href="#" class="nav__link">shop</a>
@@ -23,37 +24,48 @@
 		    </nav>
         </div>
         <div class="header__block-right">
-          <button class="btn">
-            <img src="img/loupe.jpg" class="btn-img">  
-          </button> 
+          <form action="/search/" target="_blank" class="form">
+            <input type="hidden" name="searchid">
+            <input type="search" name="text" required placeholder="" class="input">
+            <input type="image" class="form-img" src="img/loupe.jpg">
+          </form>
           <nav class="nav__second">
-            <a href="#" class="nav__link">sign in</a>
-            <a href="#" class="nav__link"><span class="nav__link-cart">cart</span><span class="nav__link-one">1</span></a>
+            <a href="#" class="nav__link nav__link_ipad1">sign in</a>
+            <a href="#" class="nav__link nav__link_ipad1"><span class="nav__link-cart">cart</span><span class="nav__link-one">1</span></a>
           </nav>
             <button class="usa"><img src="img/united-states.png" class="usa-image"></button>
           </div>
+          <div class="wrapper">
+            <div class="line"></div>
+            <div class="line1"></div>
+          </div>
           <img src="img/rob-potter.jpg" class="header__img" />
+          <div class="header__img-tablet"></div>
+          <div class="header__img-phone"></div>
           <h1 class="header__title">
             legendary<br/>
             footwear<br/>
             reborn.
           </h1>
           <p class="header__txt">shop now</p>
-            <button class="header__btn">
-              <img src="img/Arrow top.png" class="btn__arrow">
-            </button>
-            </div>
+          <div class="header__arrow">
+            <div><!-- место для стрелки --></div>
+          </div>
+        </div>
       </div>
     </header>
     <section class="section">
       <div class="container">
         <div class="section__block">
           <h2 class="section__title">
-            feautered product  
+            featured product  
           </h2>
           <div class="wrap">
               <figure class="column1">
-                <img src="img/shoes1.jpg" class="col__img" />
+                <img class="col__img1170" src="img/shoes1.jpg">
+                <img class="col__img1024" src="img/shoes1-1024.jpg">
+                <img class="col__img768" src="img/shoes1-768.jpg">
+                <img class="col__img375-320" src="img/shoes1-375-320.jpg">
                   <figcaption class="col__item">
                     AtlasBlack/Rasta Axion
                   </figcaption>
@@ -62,35 +74,38 @@
                       $89.00
                     </span>
                     <span class="section__item"> 
-                      <a href="#" class="section__item section__item_gray"></a>
+                      <a href="#" class="section__item section__item_gray section__item_red768"></a>
                       <a href="#" class="section__item section__item_black"></a>
-                      <a href="#" class="section__item section__item_red"></a>
+                      <a href="#" class="section__item section__item_red section__item_gray768"></a>
                       <a href="#" class="section__item section__item_yellow"></a>         
                     </span>
                   </figcaption>                 
               </figure>
-          <img src="img/vertikal.png" class="vertikal-one">
+        <!--  <img src="img/vertikal.png" class="vertikal-one"> -->
               <figure class="column2">
-                <img src="img/shoes2.jpg" class="col__img" /> 
-                  <figcaption class="col__item">
+                <img class="col__img1170" src="img/shoes2.jpg">
+                <img class="col__img1024" src="img/shoes2-1024.jpg">
+                <img class="col__img768" src="img/shoes2-768.jpg">
+                  <figcaption class="col__item col__item_small768">
                     Camel/Chili Pepper Axion
                   </figcaption>
                   <figcaption>
-                    <span class="section__price">
+                    <span class="section__price section__price_small768">
                       $74.00
                     </span>
-                    <span class="section__item">
+                    <span class="section__item section__item_small768">
                       <a href="#" class="section__item section__item_gray"></a>
-                      <a class="section__item section__item_peach"></a>
-                      <a class="section__item section__item_red"></a>
-                      <a class="section__item section__item_yellow"></a>                  
+                      <a href="#" class="section__item section__item_peach"></a>
+                      <a href="#" class="section__item section__item_red"></a>
+                      <a href="#" class="section__item section__item_yellow"></a>                  
                     </span>
                   </figcaption>   
               </figure>
-            <img src="img/vertikal.png" class="vertikal-two">       
+          <!--  <img src="img/vertikal.png" class="vertikal-two"> -->      
               <figure class="column3">
-                <img src="img/shoes3.jpg" class="col__img" />
-                <figcaption class="col__item">
+                <img class="col__img1170" src="img/shoes3.jpg">
+                <img class="col__img1024" src="img/shoes3-1024.jpg">
+                 <figcaption class="col__item">
                     Mandel Smoke/Rust Axion
                   </figcaption>
                   <figcaption>
@@ -105,10 +120,11 @@
                     </span>
                   </figcaption>
               </figure>
-            <img src="img/vertikal.png" class="vertikal-three">
+          <!--  <img src="img/vertikal.png" class="vertikal-three"> -->
               <figure class="column4">
-                <img src="img/shoes4.jpg" class="col__img" />
-                <figcaption class="col__item">
+                <img class="col__img1170" src="img/shoes4.jpg">
+                <img class="col__img1024" src="img/shoes4-1024.jpg">
+                  <figcaption class="col__item">
                     Cloud/Electric Blue Axion
                   </figcaption>
                   <figcaption>
