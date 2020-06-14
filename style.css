@@ -172,42 +172,45 @@
 /* картинка головной части страницы
 ========================= */
 .header__image {
-  display: flex;
+  position: relative;
   width: 100%;
   max-width: 1030px;
   height: 280px;
   background-image: url(img/rob-potter.jpg);
   background-size: 100%;
-} 
+}
+
+.header__block-two{
+  /*position: absolute;*/
+  width: 100%;
+  max-width: 195px;
+  height: 87px;
+ }
+
 
 .header__title {
-  position: absolute;
-  max-width: 195px;
-  max-height: 87px;
-  left: calc(50% - 195px/2 - 358px);
-  top: 207px;
+  padding: 91px 775px 15px 60px;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 29px;
-  display: flex;
-  align-items: center;
-  text-align: justify;
   text-transform: uppercase;
   color: #ffff;
 }
 
-.header__txt{
-  position: absolute;
-  max-width: 72px;
-  max-height: 12px;
-  left: calc(50% - 72px/2 - 419px);
-  top: 309px;
-  font-style: normal;
-  font-weight: bold;
+.header__for-txt-arrow{
   display: flex;
   align-items: center;
-  text-align: justify;
+  padding-top: 0;
+  padding-bottom: 75px;
+  padding-left: 60px;
+}
+
+.header__txt{
+  padding-right: 6px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
   text-transform: uppercase;
   color: #ffff;
 }
@@ -224,13 +227,11 @@
 }
 
 .header__arrow div {
-  position: relative;
-  top: -85px;
+  position: absolute;
+  top: 0;
   width: 43px;
   height: 1px;
   background-color: #ffffff;
-  left: calc(50% - 43px/2 + 135px);
-  display: block;
 }
 
 .header__arrow div::after {
@@ -277,10 +278,17 @@
 
 /* обертка для колонок с товаром
 ========================= */
-.wrap {
+/*.wrap {
   overflow: hidden;
   margin: 0 auto;
-} 
+}*/
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .column1,
 .column2,
@@ -482,19 +490,19 @@
 ************************** */
 @media screen 
 and (max-width: 2050px)
-and (min-width: 1921px) {
+and (min-width: /*1921*/1759px) {
 
 .body {
   width: 100%;
   max-width: 2050px;
-  min-width: 1921px;
+  min-width: /*1921*/1759px;
   margin: 0 auto;	
 }
 
 .container {
   width: 100%;
   max-width: 1805px;
-  min-width: 1692px;
+  min-width: 1550px;
   margin: 0 auto;
 }
 
@@ -578,30 +586,49 @@ and (min-width: 1921px) {
 }
 
 .header__image {
+  position: relative;
   width: 100%;
   max-width: 1805px;
   height: 491px;
   background-image: url(img/rob-potter.jpg);
   background-repeat: no-repeat;
-} 
+}
+
+.header__block-two {
+  /*position: absolute;*/
+  max-width: 342px;
+  height: 152px;
+}
 
 .header__title {
-  max-width: 342px;
-  max-height: 152px;
-  left: calc(50% - 342px/2 - 650px);
-  top: 330px;
+  padding: 159px 1358px 26px 105px;
+  font-style: normal;
+  font-weight: bold;
   font-size: 53px;
   line-height: 52px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 131px;
+  padding-left: 105px;
 }
 
 .header__txt{
-  max-width: 126px;
-  max-height: 21px;
-  left: calc(50% - 126px/2 - 753px);
-  top: 540px;
-  font-size: 17px;
-  line-height: 16px;
+  padding-right: 11px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: 21px;
+  line-height: 20px;
 }
+
 
 .header__arrow {
   cursor: pointer;
@@ -612,12 +639,11 @@ and (min-width: 1921px) {
 }
 
 .header__arrow div {
-  position: relative;
-  top: -150px;
+  position: absolute;
+  top: 0;
   width: 75px;
   height: 2px;
   background-color: #ffffff;
-  left: calc(50% - 43px/2 + 190px);
 }
 
 .header__arrow div::after {
@@ -791,286 +817,21 @@ and (min-width: 1921px) {
 }
 }
 
-
 @media screen 
-and (max-width: 1920px)
-and (min-width: 1751px) {
-.body {
-  width: 100%;
-  max-width: 1920px;
-  min-width: 1751px;
-  margin: 0 auto;	
-}
-
-.container {
-  width: 100%;
-  max-width: 1690px;
-  min-width: 1540px;
-  margin: 0 auto;
-}
-
-.logo {
-  width: 100%;
-  max-width: 90px;
-  max-height: 90px;
-  margin: 52px 73px 48px 0;
-}
-
-.nav {
-  display: inline-block;
-  padding: 88px 132px 63px 0;
-}
-
-.nav__second {
-  padding: 88px 0 63px 0;
-}
-
-.nav__link {
-  padding-right: 57px;
-  font-size: 16px;
-  line-height: 17px;
-}
-
-.nav__link-cart {
-  padding-right: 1px;
-  font-size: 16px;
-}
-
-.nav__link-one {
-  display: inline-block;
-  font-size: 15px;
-  line-height: 16px;
-  width: 20px;
-  height: 20px;
-  max-width: 20px;
-  max-height: 20px;
-  background: black;
-  border-radius: 50%;
-  text-align: center;
-  color: white;
-  justify-content: center;
-  vertical-align: middle;
-}
-
-.form {
-  max-width: 343px;
-  max-height: 46px;
-  margin: 87px 63px 80px 0;
-  border-bottom: 1px solid #000000;
-}
-
-.form-img {
-  padding-top: 5px;
-  padding-right: 1px;
-  padding-bottom: 5px;
-  border-bottom: transparent;
-}
-
-.input {
-  border: 0;
-}
-
-.usa{
-  width: 100%;
-  max-width: 20px;
-  padding: 0;
-}
-
-.usa-image{
-  width: 100%;
-  padding: 3px 0;
-}
-
-.header__image {
-  width: 100%;
-  max-width: 1805px;
-  height: 460px;
-  background-image: url(img/rob-potter.jpg);
-  background-repeat: no-repeat;
-} 
-
-.header__title {
-  max-width: 342px;
-  max-height: 152px;
-  left: calc(50% - 342px/2 - 600px);
-  top: 330px;
-  font-size: 53px;
-  line-height: 52px;
-}
-
-.header__txt{
-  max-width: 126px;
-  max-height: 21px;
-  left: calc(50% - 126px/2 - 703px);
-  top: 540px;
-  font-size: 17px;
-  line-height: 16px;
-}
-
-.header__arrow div {
-  position: relative;
-  top: -108px;
-  width: 75px;
-  height: 2px;
-  background-color: #ffffff;
-  left: calc(50% - 75px/2 + 208px);
-  display: block;
-}
-
-.section__title {
-  font-size: 38px;
-  line-height: 37px;
-  margin-top: 94px;
-  margin-bottom: 26px;
-  padding-bottom: 1px;
-} 
-
-.column1,
-.column2,
-.column3,
-.column4 {
-  max-width: 377px;
-  margin-bottom: 43px;
-}
-
-.column1 {
- margin-right: 31px;
-}
-
-.column2,
-.column3 {
- margin-right: 30px;
- margin-left: 30px;
-}
-
-.column4 {
-  margin-right: 0;
-  margin-left: 31px;
-}
-
-.col__img1170{
-  width: 100%;
-  max-width: 308px;
-  margin: 0 31px 39px 37px;
-}
-
-.col__img1024,
-.col__img768,
-.col__img375-320 {
-  display: none;	
-}
-
-.col__item {
-  margin: 0 20px 10px 20px;
-  padding-top: 10px;
-  font-size: 20px;
-  line-height: 19px;
-}
-
-.section__price {
-  font-size: 23px;
-  line-height: 22px;
-  margin: 0 162px 35px 20px;
-}
-
-.section__item {
-  cursor: pointer;
-}
-
-.section__item_gray,
-.section__item_red,
-.section__item_yellow,
-.section__item_blue {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%; 
-}
-
-.section__item_gray:hover,
-.section__item_red:hover,
-.section__item_yellow:hover,
-.section__item_blue:hover {
-  width: 14px;
-  height: 14px;
-}
-
-.section__item_gray{
-  background: #c4c4c4;
-  margin-right: 6px;
-}
-
-.section__item_red {
-  background: #b62e3c;
-  margin-right: 6px;
-}
-
-.section__item_yellow {
-  background: #fdb431;
-  margin-right: 6px;
-}
-
-.section__item_blue {
-  background: #41479b;
-  margin-right: 6px;
-}
-
-.section__item_black,
-.section__item_peach,
-.section__item_burgundy,
-.section__item_lightblue {
-  width: 16px;
-  height: 16px;
-}
-
-.section__item_black:hover,
-.section__item_peach:hover,
-.section__item_burgundy:hover,
-.section__item_lightblue:hover {
-  width: 18px;
-  height: 18px;
-}
-
-.column2:before {
-  content:"";
-  opacity: .2;
-  height: 180px;
-  top: 890px;
-  left: calc(50% - 1px/2 - 470px);
-}
-
-.column3:before {
-  content:"";
-  opacity: .2;
-  height: 180px;
-  top: 890px;
-  left: calc(50% - 1px/2 - 60px);
-}
-
-.column4:before {
-  content:"";
-  opacity: .2;
-  height: 180px;
-  top: 890px;
-  margin-left: 18px;
-  left: calc(50% - 1px/2 + 390px);
-}	
-}
-
-@media screen 
-and (max-width: 1750px)
+and (max-width: 1758px)
 and (min-width: 1551px) {
 
 .body {
   width: 100%;
-  max-width: 1750px;
+  max-width: 1758px;
   min-width: 1551px;
   margin: 0 auto;	
 }
 
 .container {
   width: 100%;
-  max-width: 1540px;
-  min-width: 1365px;
+  max-width: 1548px;
+  min-width: 1366px;
   margin: 0 auto;
 }
 
@@ -1147,39 +908,55 @@ and (min-width: 1551px) {
 }
 
 .header__image {
+  position: relative;
   width: 100%;
-  max-width: 1540px;
-  height: 392px;
+  max-width: 1548px;
+  height: 421px;
   background-image: url(img/rob-potter.jpg);
   background-repeat: no-repeat;
 } 
 
+.header__block-two {
+  position: absolute;
+  /*max-width: 342px;
+  height: 152px;*/
+}
+
 .header__title {
-  max-width: 342px;
-  max-height: 152px;
-  left: calc(50% - 342px/2 - 530px);
-  top: 300px;
-  font-size: 53px;
-  line-height: 52px;
+  padding: 136px 1165px 22px 90px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 112px;
+  padding-left: 90px;
 }
 
 .header__txt{
-  max-width: 126px;
-  max-height: 21px;
-  left: calc(50% - 126px/2 - 634px);
-  top: 480px;
-  font-size: 17px;
-  line-height: 16px;
+  padding-right: 9px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: 18px;
+  line-height: 17px;
 }
 
 .header__arrow div {
-  position: relative;
-  top: -85px;
+  position: absolute;
+  top: 0;
   width: 75px;
   height: 2px;
   background-color: #ffffff;
-  left: calc(50% - 75px/2 + 208px);
-  display: block;
 }
 
 .section__title {
@@ -1272,8 +1049,8 @@ and (min-width: 1551px) {
 
 .section__item_yellow {
   background: #fdb431;
-  margin-right: 6px; /* из головы */
-}
+  margin-right: 6px;
+} 
 
 .section__item_blue {
   background: #41479b;
@@ -1325,272 +1102,6 @@ and (min-width: 1551px) {
 }
 
 @media screen 
-and (max-width: 1550px)
-and (min-width: 1367px) {
-
-.body {
-  width: 100%;
-  max-width: 1550px;
-  min-width: 1367px;
-  margin: 0 auto;	
-}
-
-.container {
-  width: 100%;
-  max-width: 1360px;
-  min-width: 1200px;
-  margin: 0 auto;
-}
-
-.logo {
-  width: 100%;
-  max-width: 73px;
-  max-height: 73px;
-  margin: 42px 59px 39px 0;
-}
-
-.nav {
-  padding: 71px 106px 50px 0;
-}
-
-.nav__second {
-  padding: 71px 0 50px 0;
-}
-
-.nav__link {
-  padding-right: 46px;
-  font-size: 14px;
-  line-height: 15px;
-}
-
-.nav__link-cart {
-  padding-right: 1px;
-  font-size: 14px;
-}
-
-.nav__link-one {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 15px;
-  width: 16px;
-  height: 16px;
-  max-width: 16px;
-  max-height: 16px;
-  background: black;
-  border-radius: 50%;
-  color: white;
-  vertical-align: middle;
-  justify-content: center;
-}
-
-.form {
-  max-width: 277px;
-  max-height: 37px;
-  margin: 70px 50px 65px 0;
-  border-bottom: 1px solid #000000;
-}
-
-.form-img {
-  padding-top: 5px;
-  padding-right: 1px;
-  padding-bottom: 5px;
-  border-bottom: transparent;
-}
-
-.input {
-  border: 0;
-}
-
-.usa{
-  width: 100%;
-  max-width: 20px;
-  padding: 0;
-}
-
-.usa-image{
-  width: 100%;
-  padding: 3px 0;
-}
-
-
-.header__image {
-  width: 100%;
-  max-width: 1540px;
-  height: 392px;
-  background-image: url(img/rob-potter.jpg);
-  background-repeat: no-repeat;
-} 
-
-.header__title {
-  max-width: 303px;
-  max-height: 135px;
-  left: calc(50% - 303px/2 - 460px);
-  top: 250px;
-  font-size: 47px;
-  line-height: 46px;
-}
-
-.header__txt{
-  max-width: 112px;
-  max-height: 19px;
-  left: calc(50% - 112px/2 - 552px);
-  top: 440px;
-  font-size: 17px;
-  line-height: 16px;
-}
-
-.header__arrow div {
-  position: relative;
-  top: -85px;
-  width: 75px;
-  height: 2px;
-  background-color: #ffffff;
-  left: calc(50% - 75px/2 + 208px);
-  display: block;
-}
-
-.section__title {
-  font-size: 31px;
-  line-height: 32px;
-  margin-top: 76px;
-  margin-bottom: 21px;
-  padding-bottom: 1px;
-} 
-
-.column1,
-.column2,
-.column3,
-.column4 {
-  max-width: 305px;
-  margin-bottom: 35px;
-}
-
-.column1 {
- margin-right: 25px;
-}
-
-.column2,
-.column3 {
- margin-right: 24px;
- margin-left: 24px;
-}
-
-.column4 {
-  margin-right: 0;
-  margin-left: 25px;
-}
-
-.col__img1170{
-  width: 100%;
-  max-width: 249px;
-  margin: 0 25px 32px 30px;
-}
-
-.col__img1024,
-.col__img768,
-.col__img375-320 {
-  display: none;	
-}
-
-.col__item {
-  margin: 0 16px 8px 16px;
-  padding-top: 8px;
-  font-size: 16px;
-  line-height: 15px;
-}
-
-.section__price {
-  font-size: 19px;
-  line-height: 18px;
-  float: left;
-  margin: 0 131px 28px 16px;
-}
-
-.section__item {
-  cursor: pointer;
-}
-
-.section__item_gray,
-.section__item_red,
-.section__item_yellow,
-.section__item_blue {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%; 
-}
-
-.section__item_gray:hover,
-.section__item_red:hover,
-.section__item_yellow:hover,
-.section__item_blue:hover {
-  width: 12px;
-  height: 12px;
-}
-
-.section__item_gray{
-  background: #c4c4c4;
-  margin-right: 5px;
-}
-
-.section__item_red {
-  background: #b62e3c;
-  margin-right: 5px;
-}
-
-.section__item_yellow {
-  background: #fdb431;
-  margin-right: 5px;
-}
-
-.section__item_blue {
-  background: #41479b;
-  margin-right: 5px;
-}
-
-.section__item_black,
-.section__item_peach,
-.section__item_burgundy,
-.section__item_lightblue {
-  width: 14px;
-  height: 14px;
-  margin-right: 5px;
-  border-radius: 50%;
-}
-
-.section__item_black:hover,
-.section__item_peach:hover,
-.section__item_burgundy:hover,
-.section__item_lightblue:hover {
-  width: 16px;
-  height: 16px;
-}
-
-.column2:before {
-  content:"";
-  opacity: .2;
-  height: 120px;
-  top: 730px;
-  left: calc(50% - 1px/2 - 350px);
-}
-
-.column3:before {
-  content:"";
-  opacity: .2;
-  height: 120px;
-  top: 730px;
-  left: calc(50% - 1px/2 - 45px);
-}
-
-.column4:before {
-  content:"";
-  opacity: .2;
-  height: 120px;
-  top: 730px;
-  left: calc(50% - 1px/2 + 300px);
-}
-}
-
-@media screen 
 and (max-width: 1046px)
 and (min-width: 1025px) {
 
@@ -1629,35 +1140,53 @@ and (min-width: 1025px) {
 }
 
 .header__image {
+  position: relative;
   width: 100%;
   max-width: 949px;
   height: 253px;
   background-image: url(img/rob-potter.jpg);
   background-repeat: no-repeat;
-} 
+}
+
+.header__block-two {
+  position: absolute;
+}
 
 .header__title {
-  max-width: 209px;
-  max-height: 79px;
-  left: calc(50% - 209px/2 - 300px);
-  top: 195px;
+  padding: 81px 693px 13px 54px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 67px;
+  padding-left: 54px;
 }
 
 .header__txt{
-  max-width: 77px;
-  max-height: 11px;
-  left: calc(50% - 77px/2 - 363px);
-  top: 303px;
+  padding-right: 5px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: 11px;
+  line-height: 10px;
 }
 
 .header__arrow div {
-  position: relative;
-  top: -65px;
+  position: absolute;
+  top: 0;
   width: 46px;
   height: 1px;
   background-color: #ffffff;
-  left: calc(50% - 43px/2 + 153px);
-  display: block;
 }
 
 .column1,
@@ -1765,19 +1294,19 @@ and (min-width: 1025px) {
 ************************** */
 @media screen 
 and (max-width: 1024px)
-and (min-width: 954px) {
+and (min-width: 947px) {
 
 .body {
   width: 100%;
   max-width: 1024px;
-  min-width: 948px;
+  min-width: 947px;
   margin: 0 auto;	
 }
 
 .container {
   width: 100%;
   max-width: 930px;
-  min-width: 859px;
+  min-width: 860px;
   margin: 0 auto;
 }
 
@@ -1794,11 +1323,11 @@ and (min-width: 954px) {
 }
 
 .nav {
-  padding: 54px 35px 61px 0; /* padding-right 35px задано пока из головы */
+  padding: 54px 35px 61px 0; 
 }
 
 .nav__second {
-  padding: 54px 0 61px 0; /* padding-right 25px переписала от .nav */
+  padding: 54px 0 61px 0;
   margin-right: 2px;
 }
 
@@ -1831,27 +1360,40 @@ and (min-width: 954px) {
   margin-bottom: 61px;
 }
 
-
 .header__image {
+  position: relative;
   width: 100%;
   max-width: 930px;
-  height: 253px;
+  max-height: 253px;
   background-image: url(img/rob-potter.jpg);
   background-repeat: no-repeat;
 } 
 
 .header__title {
-  max-width: 209px;
-  max-height: 79px;
-  left: calc(50% - 209px/2 - 307px);
-  top: 217px;
+  padding: 79px 678px 13px 54px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 68px;
+  padding-left: 54px;
 }
 
 .header__txt{
-  max-width: 77px;
-  max-height: 11px;
-  left: calc(50% - 77px/2 - 373px);
-  top: 309px;
+  padding-right: 7px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
   font-size: 12px;
   line-height: 11px;
 }
@@ -1865,13 +1407,11 @@ and (min-width: 954px) {
 }
 
 .header__arrow div {
-  position: relative;
-  top: -77px;
+  position: absolute;
+  top: 0;
   max-width: 46px;
   max-height: 1px;
   background-color: #ffffff;
-  left: calc(50% - 46px/2 + 132px);
-  display: block;
 }
 
 .header__arrow div::after {
@@ -2022,15 +1562,15 @@ and (min-width: 954px) {
 }
 
 
-/* Media- запросы от max=953 (точка излома сайта)
+/*Media- запросы от max=946 (точка излома сайта)
 ************************** */
 @media screen 
-and (max-width: 953px)
+and (max-width: 946px)
 and (min-width: 887px) {
 
 .body {
   width: 100%;
-  max-width: 947px;
+  max-width: 946px;
   min-width: 887px;
   margin: 0 auto;	
 }
@@ -2096,7 +1636,6 @@ and (min-width: 887px) {
   color: white;
 }
 
-
 .usa-image{
   margin-top: 49px;
   margin-bottom: 61px;
@@ -2104,25 +1643,43 @@ and (min-width: 887px) {
 
 
 .header__image {
+  position: relative;
   width: 100%;
   max-width: 852px;
-  height: 253px;
+  max-height: 230px;
   background-image: url(img/rob-potter.jpg);
   background-repeat: no-repeat;
 } 
 
+.header__block-two {
+  position: absolute;
+}
+
 .header__title {
-  max-width: 209px;
-  max-height: 79px;
-  left: calc(50% - 209px/2 - 290px);
-  top: 200px;
+  padding: 73px 626px 12px 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 63px;
+  padding-left: 50px;
 }
 
 .header__txt{
-  max-width: 77px;
-  max-height: 11px;
-  left: calc(50% - 77px/2 - 354px);
-  top: 309px;
+  padding-right: 7px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
   font-size: 12px;
   line-height: 11px;
 }
@@ -2136,13 +1693,11 @@ and (min-width: 887px) {
 }
 
 .header__arrow div {
-  position: relative;
-  top: -56px;
+  position: absolute;
+  top: 0;
   max-width: 46px;
   max-height: 1px;
   background-color: #ffffff;
-  left: calc(50% - 46px/2 + 115px);
-  display: block;
 }
 
 .header__arrow div::after {
@@ -2291,19 +1846,19 @@ and (min-width: 887px) {
 /* Media- запросы от max=886 (точка излома сайта)
 ************************** */
 @media screen and (max-width: 886px)
-and (min-width: 796px) {
+and (min-width: 769px) {
 
 .body {
   max-width: 100%;
   max-width: 886px;
-  min-width: 796px;
+  min-width: 769px;
   margin: 0 auto;
 }
 
 .container {
   max-width: 100%;
   max-width: 792px;
-  min-width: 701px;
+  min-width: 687px;
   margin: 0 auto;
 }
 
@@ -2317,23 +1872,6 @@ and (min-width: 796px) {
   width: 14px;
   height: 14px;
 }
-
-/*.nav__link-one {
-  display: inline-block;
-  font-size: 10px;
-  line-height: 11px;
-  width: 15px;
-  height: 15px;
-  max-width: 15px;
-  max-height: 15px;
-  background: black;
-  border-radius: 50%;
-  text-align: center;
-  color: white;
-  text-align: center;
-  color: white;
-  vertical-align: middle;
-}*/
 
 .form {
   max-width: 80px;
@@ -2378,39 +1916,54 @@ and (min-width: 796px) {
   align-items: center;
 }
 
-
 .header__image {
+  position: relative;
   width: 100%;
   max-width: 792px;
-  height: 240px;
+  max-height: /*216px*/21vh;
   background-image: url(img/rob-potter.jpg);
   background-repeat: no-repeat;
-} 
+}
+
+.header__block-two {
+  position: absolute;
+}
 
 .header__title {
-  font-size: 24px;
-  max-width: 209px;
-  max-height: 79px;
-  left: calc(50% - 209px/2 - 250px);
-  top: 180px;
+  padding: 68px 586px 11px 47px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 59px;
+  padding-left: 47px;
 }
 
 .header__txt{
-  font-size: 11px;
-  max-width: 77px;
-  max-height: 11px;
-  left: calc(50% - 77px/2 - 313px);
-  top: 285px;
+  padding-right: 7px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: 12px;
+  line-height: 11px;
 }
 
 .header__arrow div {
-  position: relative;
-  top: -46px;
+  position: absolute;
+  top: 0;
   max-width: 46px;
   max-height: 1px;
   background-color: #ffffff;
-  left: calc(50% - 46px/2 + 115px);
-  display: block;
 }
 
 .section__title {
@@ -2431,138 +1984,6 @@ and (min-width: 796px) {
   margin-bottom: 24px;
   margin-left: 5px;	
 }
-}
-
-/* Media- запросы max=795px
-************************** */
-@media screen and (max-width: 795px)
-and (min-width: 769px) {
-
-.body {
-  max-width: 100%;
-  max-width: 795px;
-  min-width: 769px;
-  margin: 0 auto;
-}
-
-.container {
-  max-width: 100%;
-  max-width: 735px;
-  min-width: 709px;
-  margin: 0 auto;
-}
-
-.nav__link-cart {
-  padding-right: 3px;
-  font-size: 10px;
-}
-
-.nav__link-one {
-  font-size: 10px;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-}
-
-.form {
-  max-width: 110px;
-  max-height: 24px;
-  margin: 48px 35px 44px 0;
-}
-
-.form-img {
-  padding-top: 5px;
-  padding-right: 1px;
-  padding-bottom: 5px;
-  border-bottom: transparent;
-}
-
-
-.input {
-  border: 0;
-  max-width: 95px;
-}
-
-.nav {
-  padding: 54px 20px 50px 0;
-}
-
-.nav__link {
-  font-size: 10px;
-  padding-right: 25px;
-}
-
-.nav__link-cart {
-  font-size: 10px;
-  padding-right: 4px;
-}
-
-.nav__link-one {
-  font-size: 8px;
-  width: 13px;
-  height: 13px;
-}
-
-.header__image {
-  width: 100%;
-  max-width: 735px;
-  height: 230px;
-  background-image: url(img/rob-potter.jpg);
-  background-repeat: no-repeat;
-} 
-
-.header__title {
-  font-size: 22px;
-  max-width: 209px;
-  max-height: 79px;
-  left: calc(50% - 209px/2 - 220px);
-  top: 165px;
-}
-
-.header__txt{
-  font-size: 11px;
-  max-width: 77px;
-  max-height: 11px;
-  left: calc(50% - 77px/2 - 284px);
-  top: 270px;
-}
-
-.header__arrow div {
-  position: relative;
-  top: -46px;
-  max-width: 40px;
-  max-height: 1px;
-  background-color: #ffffff;
-  left: calc(50% - 46px/2 + 115px);
-  display: block;
-}
-
-.section__title {
-  font-size: 18px;
-}
-
-.column4,
-.column2:before,
-.column3:before, 
-.column4:before {
-  display: none;
-}
-
-.column1,
-.column2,
-.column3 {
-  max-width: 212px;
-  margin-bottom: 26px;
-}
-
-.col__img1024 {
-  width: 60%;
-  max-width: 102px;
-  margin-right:  5px;
-  margin-bottom: 24px;
-  margin-left: 5px;	
-}
-
 .section__item_gray,
 .section__item_red,
 .section__item_yellow,
@@ -2602,16 +2023,17 @@ and (min-width: 769px) {
 }
 }
 
+
 /* Media- запросы max=768px
 ************************** */
 @media screen and (max-width: 768px)
-and (min-width: /*762px*/376px) {
+and (min-width: 551px) {
 
 .body,
 .container {
   max-width: 100%;
   max-width: 768px;
-  min-width: /*762*/376px;
+  min-width: 551px;
   margin: 0 auto;
 }
 
@@ -2626,11 +2048,10 @@ and (min-width: /*762px*/376px) {
 
 .logo-burger {
   display: inline-block;
-  /*margin: 42px 464px 38px 43px;*/
+  max-width: /*156px*/20.3vw;
   margin: 0;
-  padding-top: 42px;
-  /*padding-right: 464px;*/
-  padding-bottom: 38px;
+  padding-top: /*42px*/5.5vw;
+  padding-bottom: /*38px*/4.9vw;
 }
 
 .logo,
@@ -2646,48 +2067,65 @@ and (min-width: /*762px*/376px) {
 .wrapper {
   display: inline-block;
   cursor: pointer;
-  /*margin-top: 46px;
-  margin-bottom: 42px;*/
   margin: 0;
-  padding-top: 46px;
-  padding-bottom: 42px;
+  padding-top: /*46px*/5.99vw;
+  padding-bottom: /*42px*/5.46vw;
 }
 
 .line,
 .line1 {
-  width: 61px;
-  height: 9px;
+  width: /*61px*/7.9vw;
+  height: /*9px*/0.88vh;
   background-color: #000000;
 }
 
 .line {
-  margin-bottom: 8px;
+  margin-bottom: /*8px*/1vw;
 }
 
 .header__image {
-  width: 100%;
-  max-width: 768px;
-  height: 415px;
+  /*width: 100%;*/
+  max-width: 768px/*100vw*/;
+  height: 407px/*40.5vh*/;
   background-image: url(img/rob-potter-tablet.png);
   background-repeat: no-repeat;
+  margin-bottom: 55px;
 } 
 
-.header__title {
-  max-width: 355px;
-  max-height: 169px;
-  left: calc(50% - 355px/2 - 155px);
-  top: 230px;
-  font-size: 50px;
-  line-height: 48px;
+.header__block-two {
+  padding-top: /*113px*/3vw;
+  padding-left: -25px;
+  padding-right: /*368px*/47.92vw;
+  padding-bottom: /*88px*/11.5vw;
+  max-width: /*355px*/46.22vw;
+  height: /*215px*/21vh;
 }
 
-.header__txt {
-  max-width: 119px;
-  max-height: 9px;
-  left: calc(50% - 119px/2 - 275px);
-  top: 432px;
-  font-size: 20px;
-  line-height: 19px;
+.header__title {
+  padding-bottom: /*37px*/6vw;
+  font-style: normal;
+  font-weight: bold;
+  font-size: /*50px*/6.5vw;
+  line-height: /*48px*/6.25vw;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+}
+
+.header__txt{
+  padding-right: /*10px*/1.3vw;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: /*20px*/2.6vw;
+  line-height: /*19px*/2.5vw;
 }
 
 .header__arrow {
@@ -2699,13 +2137,11 @@ and (min-width: /*762px*/376px) {
 }
 
 .header__arrow div {
-  position: relative;
-  top: -95px;
-  width: 71px;
-  height: 2px;
+  position: absolute;
+  top: 0;
+  width: /*71px*/9.2vw;
+  height: /*2px*/0.2vh;
   background-color: #ffffff;
-  left: calc(50% - 71px/2 + 182px);
-  display: block;
 }
 
 .header__arrow div::after {
@@ -2737,15 +2173,13 @@ and (min-width: /*762px*/376px) {
 .section__title {
   font-size: 30px;
   line-height: 29px;
-  margin-top: 67px;
+  /*margin-top: 67px;*/
   margin-bottom: 21px;
   padding-bottom: 1px;
 } 
 
 .wrap {
-  /*margin-right: auto;
-  margin-left: auto;
-  max-width: 627px;*/
+  /*max-width: 627px;*/
   display: flex;
   justify-content: center;
   margin-right: auto;
@@ -2859,21 +2293,40 @@ and (min-width: /*762px*/376px) {
 }
 }
 
-
-/* @media screen and (max-width: 761px)
-and (min-width: 708px) {
+@media screen and (max-width: 550px)
+and (min-width: 376px) {
 
 .body,
 .container {
   max-width: 100%;
-  max-width: 761px;
-  min-width: 708px;
+  max-width: 550px;
+  min-width: 376px;
   margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  max-height: /*379px*/37vh;
+  min-height: /*263px*/25.7vh;
+}
+
+.header__block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 31px;
+  padding-right: 32px;
+  min-height: 72px;	
 }
 
 .logo-burger {
   display: inline-block;
-  margin: 42px 400px 38px 43px;
+  max-width: /*156px*/20.3vw;
+  /*margin: 42px 464px 38px 43px;*/
+  margin: 0;
+  padding-top: /*42px*/5.5vw;
+  /*padding-right: 464px;*/
+  padding-bottom: /*38px*/4.9vw;
 }
 
 .logo,
@@ -2889,87 +2342,130 @@ and (min-width: 708px) {
 .wrapper {
   display: inline-block;
   cursor: pointer;
-  margin-top: 46px;
-  margin-bottom: 42px;
+  /*margin-top: 46px;
+  margin-bottom: 42px;*/
+  margin: 0;
+  padding-top: /*46px*/5.99vw;
+  padding-bottom: /*42px*/5.46vw;
 }
 
 .line,
 .line1 {
-  width: 61px;
-  height: 9px;
+  width: /*61px*/7.9vw;
+  height: /*9px*/0.88vh;
   background-color: #000000;
 }
 
 .line {
-  margin-bottom: 8px;
+  margin-bottom: /*8px*/1vw;
 }
 
 .header__image {
-  width: 100%;
-  /*max-width: 768px;*/
-/*  height: 415px;
+  /*width: 100%;*/
+  max-width: /*550px*/100vw;
+  height: /*297px*/29vh;
   background-image: url(img/rob-potter-tablet.png);
   background-repeat: no-repeat;
+  margin-bottom: 39px;
 } 
 
-/*.header__img-tablet {
-  display: block;
-  background-image: url(img/rob-potter-tablet.png);
-  height: 415px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-} */
-
-/*.header__title {
-  max-width: 340px;
-  max-height: 155px;
-  left: calc(50% - 340px/2 - 162px);
-  top: 230px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 48px;
+.header__block-two {
+  padding-top: -50vw;
+  padding-left: -50px;
+  padding-right: 47.92vw;
+  padding-bottom: 11.5vw;
+  max-width: 46.22vw;
+  height: 21vh;
 }
 
-.header__txt {
-  max-width: 119px;
-  max-height: 9px;
-  left: calc(50% - 119px/2 - 270px);
-  top: 432px;
+.header__title {
+  padding-bottom: /*37px*/6vw;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 19px;
+  font-size: /*50px*/6.5vw;
+  line-height: /*48px*/6.25vw;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+}
+
+.header__txt{
+  padding-right: /*10px*/1.3vw;
   white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: /*20px*/2.6vw;
+  line-height: /*19px*/2.5vw;
+}
+
+.header__arrow {
+  cursor: pointer;
+  position: relative;
+  max-width: 72px;
+  height: 0;
+  margin: 0;
 }
 
 .header__arrow div {
-  position: relative;
-  top: -95px;
-  width: 65px;
-  height: 2px;
+  position: absolute;
+  top: 0;
+  width: /*71px*/9.2vw;
+  height: /*2px*/0.2vh;
   background-color: #ffffff;
-  left: calc(50% - 71px/2 + 180px);
-  display: block;
+}
+
+.header__arrow div::after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  top: -2px;
+  right: -2px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.header__arrow div::before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  top: 3px;
+  right: -2px;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
 }
 
 .section__title {
-  font-size: 28px;
+  font-size: 30px;
   line-height: 29px;
-  margin-top: 67px;
+  /*margin-top: 67px;*/
   margin-bottom: 21px;
   padding-bottom: 1px;
 } 
 
 .wrap {
+  /*max-width: 627px;*/
+  display: flex;
+  justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  max-width: 627px;
 }
 
 .column1,
 .column2 {
-  max-width: 265px;
+  max-width: 275px;
   margin-bottom: 14px;
 }
 
@@ -2985,41 +2481,44 @@ and (min-width: 708px) {
 }
 
 .column1 {
-  margin-right: 35px;
-  margin-left: 60px;
+  margin-right: 55px;
+  /*margin-left: 69px;*/
 }
 
 .column2 {
   margin-left: 0;
-  /*margin-right: 65px;
+  /*margin-right: 70px;*/
 }
 
-/*.col__img768 {
+.col__img768 {
   display: inline-block;
-  width: 80%;
-  max-width: 184px;
+  max-width: 230;
   margin: 0 23px 18px 28px;
 }
 
 .col__item {
-  margin: 0 15px 8px 15px;
+  margin: 0px 15px 8px 15px;
   padding-top: 6px;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 19px;
 }
 
 .col__item_small768 {
   margin: 0 0 8px 14px;
   padding-top: 6px;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 19px;
 }
 
 .section__price {
-  font-size: 20px;
+  font-size: 25px;
+  line-height: 24px;
   margin: 0 55px 28px 15px;
 }
 
 .section__price_small768 {
-  font-size: 20px;
+  font-size: 25px;
+  line-height: 24px;
   max-width: 105px;
   margin: 0 60px 28px 14px;	
 }
@@ -3071,1240 +2570,8 @@ and (min-width: 708px) {
 }
 }
 
-
-@media screen and (max-width: 707px)
-and (min-width: 642px) {
-
-.body,
-.container {
-  width: 100%;
-  max-width: 707px;
-  min-width: 642px;
-  margin: 0 auto;
-}
-
-.logo,
-.header__img,
-.header__img-phone,
-.nav,
-.nav__second,
-.form,
-.usa {
-  display: none;
-} 
-
-.logo-burger {
-  display: inline-block;
-  margin: 42px 350px 38px 43px;
-}
-
-.wrapper {
-  display: inline-block;
-  cursor: pointer;
-  margin-top: 46px;
-  margin-bottom: 42px;
-}
-
-.line,
-.line1 {
-  width: 55px;
-  height: 7px;
-  background-color: #000000;
-}
-
-.line {
-  margin-bottom: 7px;
-}
-
-.header__img-tablet {
-  display: block;
-  background-image: url(img/rob-potter-tablet.png);
-  height: 390px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-} 
-
-.header__title {
-  max-width: 340px;
-  max-height: 155px;
-  left: calc(50% - 340px/2 - 120px);
-  top: 210px;
-  font-size: 35px;
-  line-height: 35px;
-}
-
-.header__txt {
-  max-width: 119px;
-  max-height: 9px;
-  left: calc(50% - 119px/2 - 230px);
-  top: 350px;
-  font-size: 20px;
-  line-height: 19px;
-  white-space: nowrap;
-}
-
-.header__arrow div {
-  position: relative;
-  top: -145px;
-  width: 55px;
-  height: 2px;
-  background-color: #ffffff;
-  left: calc(50% - 71px/2 + 185px);
-  display: block;
-}
-
-.section__title {
-  font-size: 26px;
-  margin-top: 55px;
-  margin-bottom: 21px;
-  padding-bottom: 1px;
-} 
-
-.wrap {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 627px;
-}
-
-.column1,
-.column2 {
-  max-width: 265px;
-  margin-bottom: 14px;
-}
-
-.column3,
-.column4,
-.col__img1170,
-.col__img1024,
-.col__img375-320,
-.column2:before,
-.column3:before, 
-.column4:before {
-  display: none;
-}
-
-.column1 {
-  margin-right: 60px;
-  margin-left: 65px;
-}
-
-.column2 {
-  margin-left: 0;
-  /*margin-right: 65px;
-}*/
-
-
-/*.col__img768 {
-  display: inline-block;
-  width: 70%;
-  max-width: 161px;
-  margin: 0 23px 18px 28px;
-}
-
-.col__item {
-  margin: 0 15px 8px 15px;
-  padding-top: 6px;
-  font-size: 16px;
-}
-
-.col__item_small768 {
-  margin: 0 0 8px 14px;
-  padding-top: 6px;
-  font-size: 16px;
-}
-
-.section__price {
-  font-size: 16px;
-  margin: 0 55px 28px 15px;
-}
-
-.section__price_small768 {
-  font-size: 16px;
-  max-width: 105px;
-  margin: 0 60px 28px 14px;	
-}
-
-.section__item_gray,
-.section__item_red,
-.section__item_yellow,
-.section__item_black,
-.section__item_peach,
-.section__item_burgundy,
-.section__item_red768,
-.section__item_gray768 {
-  width: 16px;
-  height: 16px;
-}
-
-.section__item_gray:hover,
-.section__item_red:hover,
-.section__item_yellow:hover,
-.section__item_black:hover,
-.section__item_peach:hover,
-.section__item_burgundy:hover,
-.section__item_red768:hover,
-.section__item_gray768:hover {
-  width: 18px;
-  height: 18px;
-}
-
-.section__item_gray,
-.section__item_red,
-.section__item_black,
-.section__item_peach,
-.section__item_burgundy,
-.section__item_red768,
-.section__item_gray768 {
-  margin-right: 3px;
-}
-
-.sectin__item {
-  max-width: 95px;
-}
-
-.section__item_red768 {
-  background: #B62E3C;
-}
-
-.section__item_gray768 {
-  background: #C4C4C4;
-}
-}
- 
-
-@media screen and (max-width: 641px)
-and (min-width: 587px) {
-
-.body,
-.container {
-  width: 100%;
-  max-width: 641px;
-  min-width: 587px;
-  margin: 0 auto;
-}
-
-.logo,
-.header__img,
-.header__img-phone,
-.nav,
-.nav__second,
-.form,
-.usa {
-  display: none;
-}
-
-.logo-burger {
-  display: inline-block;
-  width: 30%;
-  margin: 42px 300px 38px 43px;
-}
-
-.wrapper {
-  display: inline-block;
-  cursor: pointer;
-  margin-top: 46px;
-  margin-bottom: 42px;
-}
-
-.line,
-.line1 {
-  width: 50px;
-  height: 7px;
-  background-color: #000000;
-}
-
-.line {
-  margin-bottom: 7px;
-}
- 
-.header__img-tablet {
-  display: block;
-  background-image: url(img/rob-potter-tablet.png);
-  height: 380px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-} 
-
-.header__title {
-  max-width: 340px;
-  max-height: 155px;
-  left: calc(50% - 340px/2 - 105px);
-  top: 210px;
-  font-size: 35px;
-  line-height: 35px;
-}
-
-.header__txt {
-  max-width: 119px;
-  max-height: 9px;
-  left: calc(50% - 119px/2 - 214px);
-  top: 350px;
-  font-size: 20px;
-  line-height: 19px;
-}
-
-.header__arrow div {
-  position: relative;
-  top: -135px;
-  width: 55px;
-  height: 2px;
-  background-color: #ffffff;
-  left: calc(50% - 71px/2 + 170px);
-  display: block;
-}
-
-.section__title {
-  font-size: 26px;
-  margin-top: 67px;
-  margin-bottom: 21px;
-  padding-bottom: 1px;
-} 
-
-.wrap {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 560px;
-}
-
-.column1,
-.column2 {
-  max-width: 235px;
-  margin-bottom: 14px;
-}
-
-.column1 {
-  margin-right: 40px;
-  margin-left: 30px;
-}
-
-.column2 {
-  margin-left: 0;
-  /*margin-right: 30px;
-} */
-
-/*.column3,
-.column4,
-.column2:before,
-.column3:before, 
-.column4:before,
-.col__img1170,
-.col__img1024,
-.col__img375-320 {
-  display: none;
-}
-
-.col__img768 {
-  display: inline-block;
-  width: 60%;
-  margin: 0 23px 18px 28px;
-}
-
-.col__item {
-  margin: 0 15px 8px 15px;
-  padding-top: 6px;
-  font-size: 15px;
-}
-
-.col__item_small768 {
-  margin: 0 0 8px 14px;
-  padding-top: 6px;
-  font-size: 15px;
-}
-
-.section__price {
-  font-size: 15px;
-  margin: 0 45px 28px 15px;
-}
-
-.section__price_small768 {
-  font-size: 15px;
-  max-width: 80px;
-  margin: 0 50px 28px 14px;
-}
-
-.section__item_gray,
-.section__item_red,
-.section__item_yellow,
-.section__item_black,
-.section__item_peach,
-.section__item_burgundy,
-.section__item_red768,
-.section__item_gray768 {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-}
-
-.section__item_gray:hover,
-.section__item_red:hover,
-.section__item_yellow:hover,
-.section__item_black:hover,
-.section__item_peach:hover,
-.section__item_burgundy:hover,
-.section__item_red768:hover,
-.section__item_gray768:hover {
-  width: 18px;
-  height: 18px;
-}
-
-.section__item_gray,
-.section__item_red,
-.section__item_black,
-.section__item_peach,
-.section__item_burgundy,
-.section__item_red768,
-.section__item_gray768 {
-  margin-right: 3px;
-}
-
-.sectin__item {
-  max-width: 95px;
-}
-
-.section__item_red768 {
-  background: #B62E3C;
-}
-
-.section__item_gray768 {
-  background: #C4C4C4;
-}
-}
-
-@media screen and (max-width: 586px)
-and (min-width: 526px) {
- 
-.body,
-.container {
-  width: 100%;
-  max-width: 586px;
-  min-width: 526px;
-  margin: 0 auto;
-}
-
-.logo-burger {
-  display: inline-block;
-  width: 30%;
-  margin: 42px 260px 38px 43px;
-}
-
-.logo,
-.nav,
-.nav__second,
-.form,
-.usa,
-.header__img,
-.header__img-phone {
-  display: none;
-}
-
-.wrapper {
-  display: inline-block;
-  cursor: pointer;
-  margin-top: 46px;
-  margin-bottom: 42px;
-}
-
-.line,
-.line1 {
-  width: 48px;
-  height: 7px;
-  background-color: #000000;
-}
-
-.line {
-  margin-bottom: 7px;
-}
-
-.header__img-tablet {
-  display: block;
-  background-image: url(img/rob-potter-tablet.png);
-  height: 360px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-} 
-
-.header__title {
-  max-width: 340px;
-  max-height: 155px;
-  left: calc(50% - 340px/2 - 72px);
-  top: 190px;
-  font-size: 30px;
-  line-height: 30px;
-}
-
-.header__txt {
-  max-width: 119px;
-  max-height: 9px;
-  left: calc(50% - 119px/2 - 180px);
-  top: 330px;
-  font-size: 16px;
-  line-height: 16px;
-  white-space: nowrap;
-}
-
-.header__arrow {
-  cursor: pointer;
-  position: relative;
-  max-width: 60px;
-  height: 0;
-  margin: 0;
-}
-
-.header__arrow div {
-  position: relative;
-  top: -135px;
-  width: 55px;
-  height: 2px;
-  background-color: #ffffff;
-  left: calc(50% - 55px/2 + 145px);
-  display: block;
-}
-
-.header__arrow div::after {
-  content: '';
-  position: absolute;
-  width: 9px;
-  height: 2px;
-  top: -2px;
-  right: -2px;
-  background-color: #ffffff;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-}
-
-.header__arrow div::before {
-  content: '';
-  position: absolute;
-  width: 9px;
-  height: 2px;
-  top: 3px;
-  right: -2px;
-  background-color: #ffffff;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-}
-
-.section__title {
-  font-size: 22px;
-  margin-top: 20px;
-  margin-bottom: 21px;
-  padding-bottom: 1px;
-} 
-
-.wrap {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 586px;
-}
-
-
-.column1 {
-  max-width: 281px;
-  margin-right: 118px;
-  margin-bottom: 14px;
-  margin-left: 118px;
-}
-
-.col__img768 {
-  display: inline-block;
-  width: 70%;
-  margin: 0 23px 18px 28px;
-}
-
-.column2,
-.column3,
-.column4,
-.col__img1170,
-.col__img1024,
-.col__img375-320,
-.column2:before,
-.column3:before, 
-.column4:before,
-.col__item_small768,
-.section__price_small768 {
-  display: none;
-}
-
-.col__item {
-  margin: 0 15px 8px 15px;
-  padding-top: 6px;
-  font-size: 15px;
-}
-
-.section__price {
-  font-size: 15px;
-  margin: 0 90px 28px 15px;
-}
-
-.section__item_yellow,
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: none;
-}
-
-.section__item_yellow:hover,
-.section__item_black:hover,
-.section__item_red768:hover,
-.section__item_gray768:hover {
-  width: 17px;
-  height: 17px;
-}
-
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  margin-right: 3px;
-}
-
-.section__item_red768 {
-  background: #B62E3C;
-}
-
-.section__item_gray768 {
-  background: #C4C4C4;
-}
-}
-
-@media screen and (max-width: 525px)
-and (min-width: 490px) {
-
-.body,
-.container {
-  max-width: 525px;
-  min-width: 490px;
-  margin: 0 auto;
-}
-
-.logo,
-.nav,
-.nav__second,
-.form,
-.usa,
-.header__img,
-.header__img-phone {
-  display: none;
-}
-
-.logo-burger {
-  display: inline-block;
-  width: 30%;
-  margin: 36px 215px 36px 43px;
-}
-
-.wrapper {
-  display: inline-block;
-  cursor: pointer;
-  margin-top: 40px;
-  margin-bottom: 38px;
-}
-
-.line,
-.line1 {
-  width: 45px;
-  height: 7px;
-  background-color: #000000;
-}
-
-.line {
-  margin-bottom: 7px;
-} 
-
-.header__img-tablet {
-  display: block;
-  background-image: url(img/rob-potter-tablet.png);
-  height: 355px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-} 
-
-.header__title {
-  max-width: 340px;
-  max-height: 155px;
-  left: calc(50% - 340px/2 - 60px);
-  top: 160px;
-  font-size: 30px;
-  line-height: 30px;
-}
-
-.header__txt {
-  max-width: 119px;
-  max-height: 9px;
-  left: calc(50% - 119px/2 - 168px);
-  top: 300px;
-  font-size: 16px;
-  line-height: 16px;
-  white-space: nowrap;
-}
-
-.header__arrow div {
-  position: relative;
-  top: -150px;
-  width: 55px;
-  height: 2px;
-  background-color: #ffffff;
-  left: calc(50% - 55px/2 + 130px);
-  display: block;
-}
-
-.section__title {
-  font-size: 22px;
-  margin-top: 20px;
-  margin-bottom: 21px;
-  padding-bottom: 1px;
-} 
-
-.column1 { 
-  max-width: 281px;
-  margin-right: 111px;
-  margin-bottom: 14px;
-  margin-left: 111px;
-}
-
-.column2,
-.column3,
-.column4,
-.col__img1170,
-.col__img1024,
-.col__img375-320,
-.column2:before,
-.column3:before, 
-.column4:before,
-.col__item_small768,
-.section__price_small768 {
-  display: none;
-}
-
-.col__img768 {
-  display: inline-block;
-  width: 70%;
-  margin: 0 23px 18px 28px;
-}
-
-.col__item {
-  margin: 0 15px 8px 15px;
-  padding-top: 6px;
-  font-size: 15px;
-}
-
-.section__price {
-  font-size: 15px;
-  margin: 0 60px 28px 15px;
-}
-
-.section__item_yellow,
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: none;
-}
-
-.section__item_yellow:hover,
-.section__item_black:hover,
-.section__item_red768:hover,
-.section__item_gray768:hover {
-  width: 17px;
-  height: 17px;
-}
-
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  margin-right: 3px;
-}
-
-.section__item_red768 {
-  background: #B62E3C;
-}
-
-.section__item_gray768 {
-  background: #C4C4C4;
-}
-}*/
-
-
-/*@media screen and (max-width: 489px)
-and (min-width: 461px) {
-
-.body,
-.container {
-  max-width: 525px;
-  min-width: 461px;
-  margin: 0 auto;
-}
-
-.logo-burger {
-  display: inline-block;
-  width: 30%;
-  margin: 36px 150px 36px 43px;
-}
-
-.logo,
-.nav,
-.nav__second,
-.form,
-.usa,
-.header__img,
-.header__img-phone {
-  display: none;
-}
-
-.wrapper {
-  display: inline-block;
-  cursor: pointer;
-  margin-top: 40px;
-  margin-bottom: 38px;
-}
-
-.line,
-.line1 {
-  width: 44px;
-  height: 7px;
-  background-color: #000000;
-}
-
-.line {
-  margin-bottom: 7px;
-}
-
-.header__img-tablet {
-  display: block;
-  background-image: url(img/rob-potter-tablet.png);
-  height: 300px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-} 
-
-.header__title {
-  max-width: 340px;
-  max-height: 155px;
-  left: calc(50% - 340px/2 - 40px);
-  top: 160px;
-  font-size: 30px;
-  line-height: 30px;
-}
-
-.header__txt {
-  max-width: 119px;
-  max-height: 9px;
-  left: calc(50% - 119px/2 - 148px);
-  top: 300px;
-  font-size: 16px;
-  line-height: 16px;
-  white-space: nowrap;
-}
-
-.header__arrow div {
-  position: relative;
-  top: -95px;
-  width: 55px;
-  height: 2px;
-  background-color: #ffffff;
-  left: calc(50% - 55px/2 + 130px);
-  display: block;
-}
-
-.section__title {
-  font-size: 22px;
-  margin-top: 20px;
-  margin-bottom: 21px;
-  padding-bottom: 1px;
-} 
-
-.column1 { 
-  max-width: 300px;
-  margin-right: 90px;
-  margin-bottom: 14px;
-  margin-left: 90px;
-}
-
-.column2,
-.column3,
-.column4,
-.col__img1170,
-.col__img1024,
-.col__img375-320,
-.column2:before,
-.column3:before, 
-.column4:before,
-.col__item_small768,
-.section__price_small768 {
-  display: none;
-}
-
-.col__img768 {
-  display: inline-block;
-  width: 60%;
-  margin: 0 23px 18px 28px;
-}
-
-.col__item {
-  margin: 0 15px 8px 15px;
-  padding-top: 6px;
-  font-size: 15px;
-}
-
-.section__price {
-  font-size: 15px;
-  margin: 0 90px 28px 15px;
-}
-
-.section__item_yellow,
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  width: 15px;
-  height: 15px;
-}
-
-.section__item_yellow:hover,
-.section__item_black:hover,
-.section__item_red768:hover,
-.section__item_gray768:hover {
-  width: 17px;
-  height: 17px;
-}
-
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  margin-right: 3px;
-}
-
-.section__item_red768 {
-  background: #B62E3C;
-}
-
-.section__item_gray768 {
-  background: #C4C4C4;
-}
-}
-
-@media screen and (max-width: 460px)
-and (min-width: 404px) {
-
-.body,
-.container {
-  max-width: 460px;
-  min-width: 376px;
-  margin: 0 auto;
-}
-
-.logo-burger {
-  display: inline-block;
-  width: 30%;
-  margin: 36px 140px 36px 43px;
-}
-
-.logo,
-.nav,
-.nav__second,
-.form,
-.usa,
-.header__img,
-.header__img-phone {
-  display: none;
-}
-
-.wrapper {
-  display: inline-block;
-  cursor: pointer;
-  margin-top: 40px;
-  margin-bottom: 38px;
-}
-
-.line,
-.line1 {
-  width: 43px;
-  height: 7px;
-  background-color: #000000;
-}
-
-.line {
-  margin-bottom: 7px;
-}
-
-.header__img-tablet {
-  display: block;
-  background-image: url(img/rob-potter-tablet.png);
-  height: 250px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-} 
-
-.header__title {
-  max-width: 340px;
-  max-height: 155px;
-  left: calc(50% - 340px/2 - 35px);
-  top: 160px;
-  font-size: 25px;
-  line-height: 25px;
-}
-
-.header__txt {
-  max-width: 119px;
-  max-height: 9px;
-  left: calc(50% - 119px/2 - 143px);
-  top: 270px;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-.header__arrow div {
-  position: relative;
-  top: -75px;
-  width: 55px;
-  height: 2px;
-  background-color: #ffffff;
-  left: calc(50% - 55px/2 + 125px);
-  display: block;
-}
-
-.section__title {
-  font-size: 22px;
-  margin-top: 20px;
-  margin-bottom: 21px;
-  padding-bottom: 1px;
-} 
-
-.column1 { 
-  max-width: 300px;
-  margin-right: 70px;
-  margin-bottom: 14px;
-  margin-left: 70px;
-}
-
-.column2,
-.column3,
-.column4,
-.col__img1170,
-.col__img1024,
-.col__img375-320,
-.column2:before,
-.column3:before, 
-.column4:before,
-.col__item_small768,
-.section__price_small768 {
-  display: none;
-}
-
-.col__img768 {
-  display: inline-block;
-  width: 60%;
-  margin: 0 23px 18px 28px;
-}
-
-.col__item {
-  margin: 0 15px 8px 15px;
-  padding-top: 6px;
-  font-size: 15px;
-}
-
-.section__price {
-  font-size: 15px;
-  margin-top: 0 60px 28px 15px;
-}
-
-.section__item_yellow,
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  width: 14px;
-  height: 14px;
-}
-
-.section__item_yellow:hover,
-.section__item_black:hover,
-.section__item_red768:hover,
-.section__item_gray768:hover {
-  width: 16px;
-  height: 16px;
-}
-
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  margin-right: 2px;
-}
-
-.section__item_red768 {
-  background: #B62E3C;
-}
-
-.section__item_gray768 {
-  background: #C4C4C4;
-}
-}
-
-
-@media screen and (max-width: 403px)
-and (min-width: 376px) {
-
-.body,
-.container {
-  max-width: 403px;
-  min-width: 376px;
-  margin: 0 auto;
-}
-
-.logo-burger {
-  display: inline-block;
-  width: 30%;
-  margin: 31px 120px 31px 43px;
-}
-
-.logo,
-.nav,
-.nav__second,
-.form,
-.usa,
-.header__img,
-.header__img-phone {
-  display: none;
-}
-
-.wrapper {
-  display: inline-block;
-  cursor: pointer;
-  margin-top: 35px;
-  margin-bottom: 33px;
-}
-
-.line,
-.line1 {
-  width: 42px;
-  height: 6px;
-  background-color: #000000;
-}
-
-.line {
-  margin-bottom: 6px;
-}
-
-.header__img-tablet {
-  display: block;
-  background-image: url(img/rob-potter-tablet.png);
-  height: 250px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-} 
-
-.header__title {
-  max-width: 340px;
-  max-height: 155px;
-  left: calc(50% - 340px/2 - 10px);
-  top: 120px;
-  font-size: 23px;
-  line-height: 23px;
-}
-
-.header__txt {
-  max-width: 119px;
-  max-height: 9px;
-  left: calc(50% - 119px/2 - 120px);
-  top: 230px;
-  font-size: 14px;
-  line-height: 14px;
-  white-space: nowrap;
-}
-
-.header__arrow div {
-  position: relative;
-  top: -102px;
-  width: 55px;
-  height: 2px;
-  background-color: #ffffff;
-  left: calc(50% - 55px/2 + 110px);
-  display: block;
-}
-
-.section__title {
-  font-size: 22px;
-  margin-top: 20px;
-  margin-bottom: 21px;
-  padding-bottom: 1px;
-} 
-
-.column1 { 
-  max-width: 300px;
-  margin-right: 70px;
-  margin-bottom: 14px;
-  margin-left: 70px;
-}
-
-.column2,
-.column3,
-.column4,
-.col__img1170,
-.col__img1024,
-.col__img375-320,
-.column2:before,
-.column3:before, 
-.column4:before,
-.col__item_small768,
-.section__price_small768 {
-  display: none;
-}
-
-.col__img768 {
-  display: inline-block;
-  width: 60%;
-  margin: 0 23px 18px 28px;
-}
-
-.col__item {
-  margin: 0 15px 8px 15px;
-  padding-top: 6px;
-  font-size: 15px;
-}
-
-.section__price {
-  font-size: 15px;
-  margin: 0 80px 28px 15px;
-}
-
-.section__item_yellow,
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  width: 15px;
-  height: 15px;
-}
-
-.section__item_yellow:hover,
-.section__item_black:hover,
-.section__item_red768:hover,
-.section__item_gray768:hover {
-  width: 17px;
-  height: 17px;
-}
-
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  margin-right: 3px;
-}
-
-.section__item_red768 {
-  background: #B62E3C;
-}
-
-.section__item_gray768 {
-  background: #C4C4C4;
-}
-}*/
-
-
 @media screen and (max-width: 375px)
-and (min-width:/*345*/321px) {
+and (min-width: 321px) {
  
 .body,
 .container {
@@ -4361,13 +2628,6 @@ and (min-width:/*345*/321px) {
   padding-bottom: 28px;
 }
 
-/*.wrapper {
-  display: inline-block;
-  cursor: pointer;
-  margin-top: 28px;
-  margin-bottom: 28px;
-}*/
-
 .line,
 .line1 {
   width: 41px;
@@ -4379,8 +2639,10 @@ and (min-width:/*345*/321px) {
   margin-bottom: 5px;
 }
 
-
 .header__image {
+  /*position: relative;*/
+  display: flex;
+  justify-content: flex-start;
   width: 100%;
   max-width: 375px;
   height: 191px;
@@ -4388,32 +2650,51 @@ and (min-width:/*345*/321px) {
   background-repeat: no-repeat;
 } 
 
-.header__title {
+.header__block-two {
+  margin-top: -30px;
+  margin-left: -10px;
+  /*margin-right: 121px;*/
+  padding-bottom: 33px;
   max-width: 206px;
-  max-height: 67px;
-  left: calc(50% - 206px/2 - 37px);
-  top: 134px;
-  font-size: 20px;
-  line-height: 19px;
+  height: 339px;
 }
 
-.header__txt {
-  max-width: 104px;
-  max-height: 20px;
-  left: calc(50% - 104px/2 - 88px);
-  top: 210px;
+.header__title {
+  /*padding: 62px 586px 9px 37px;*/
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffff;
+  padding-bottom: 25px;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  /*padding-bottom: 25px;
+  padding-left: 37px;*/
+}
+
+.header__txt{
+  padding-right: 10px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
   font-size: 12px;
   line-height: 11px;
 }
 
 .header__arrow div {
-  position: relative;
-  top: -50px;
+  position: absolute;
+  top: 0;
   width: 46px;
   height: 1px;
   background-color: #ffffff;
-  left: calc(50% - 46px/2 + 125px);
-  display: block;
 }
 
 .section__title {
@@ -4504,180 +2785,13 @@ and (min-width:/*345*/321px) {
 }
 }
 
-/*@media screen and (max-width: 344px)
-and (min-width: 321px) {
-
-.body,
-.container {
-  max-width: 344px;
-  min-width: 321px;
-  margin: 0 auto;
-}
-
-.logo, 
-.nav,
-.nav__second,
-.form,
-.usa,
-.header__img,
-.header__img-tablet {
-  display: none;
-}
-
-.logo-burger {
-  display: block;
-  width: 67%;
-  max-width: 104px;
-  margin-top: 24px;
-  margin-right: 120px;
-  margin-left: 48px;
-}
-
-.wrapper {
-  display: inline-block;
-  cursor: pointer;
-  margin-top: 28px;
-  margin-bottom: 28px;
-}
-
-.line,
-.line1 {
-  width: 41px;
-  height: 6px;
-  background-color: #000000;
-}
-
-.line {
-  margin-bottom: 5px;
-}
-
-.header__img-phone {
-  display: block;
-  background-image: url(img/rob-potter-375.png);
-  margin-bottom: 0;
-  height: 191px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.header__title {
-  max-width: 206px;
-  max-height: 67px;
-  left: calc(50% - 206px/2 - 37px);
-  top: 134px;
-  font-size: 20px;
-  line-height: 19px;
-}
-
-.header__txt {
-  max-width: 104px;
-  max-height: 20px;
-  left: calc(50% - 104px/2 - 88px);
-  top: 210px;
-  font-size: 12px;
-  line-height: 11px;
-}
-
-.header__arrow div {
-  position: relative;
-  top: -50px;
-  width: 46px;
-  height: 1px;
-  background-color: #ffffff;
-  left: calc(50% - 46px/2 + 110px);
-  display: block;
-}
-
-.section__title {
-  font-size: 20px;
-  line-height: 19px;
-  margin-top: 33px;
-  margin-bottom: 0;
-  padding-bottom: 1px;
-} 
-
-.column1 {
-  max-width: 281px;
-  margin-bottom: 8px;
-  margin-right: 46px;
-  margin-left: 48px;
-}
-
-.column2,
-.column3,
-.column4,
-.col__img1170,
-.col__img1024,
-.col__img768 {
-  display: none;
-}
-
-.col__img375-320 {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  margin: 0 57px 17px 62px;
-}
-
-.col__item {
-  margin: 0px 80px 6px 15px;
-  padding: 0;
-  font-size: 15px;
-  line-height: 14px;
-}
-
-.section__price {
-  font-size: 20px;
-  line-height: 19px;
-  margin: 0 86px 34px 15px;
-  padding-right: 30px;
-}
-
-.section__item_yellow,
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  width: 15px;
-  height: 15px;
-}
-
-.section__item_yellow:hover,
-.section__item_black:hover,
-.section__item_red768:hover,
-.section__item_gray768:hover {
-  width: 17px;
-  height: 17px;
-}
-
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  margin-right: 2px;
-}
-
-.section__item_yellow {
-   margin-right: 0;
-}
-
-.section__item_red768 {
-  background:  #B62E3C;
-}
-
-.section__item_gray768 {
-  background: #C4C4C4;
-}
-} */
-
-
 @media screen 
-and (max-width: 320px)
-/*and (min-width: 317px)*/ {
+and (max-width: 320px) {
 
 .body,
 .container {
   max-width: 100%;
   max-width: 320px;
-  /*min-width: 317px;*/
   margin: 0 auto;
 }
 
@@ -4702,8 +2816,8 @@ and (max-width: 320px)
 
 .logo-burger {
   display: inline-block;
-  max-width: 104px;
-  min-width: 104px;
+  max-width: /*104px*/32.5vw;
+  /*min-width: 104px;*/
   /*margin: 42px 464px 38px 43px;*/
   margin: 0;
   padding-top: 24px;
@@ -4730,7 +2844,7 @@ and (max-width: 320px)
 
 .line,
 .line1 {
-  width: 41px;
+  width: /*41px*/12.8vw;
   height: 6px;
   background-color: #000000;
 }
@@ -4740,6 +2854,7 @@ and (max-width: 320px)
 }
 
 .header__image {
+  position: relative;
   width: 100%;
   max-width: 320px;
   height: 191px;
@@ -4747,32 +2862,45 @@ and (max-width: 320px)
   background-repeat: no-repeat;
 } 
 
-.header__title {
-  max-width: 206px;
-  max-height: 67px;
-  left: calc(50% - 206px/2 - 35px);
-  top: 134px;
-  font-size: 20px;
-  line-height: 19px;
+.header__block-two {
+  position: absolute;
 }
 
-.header__txt {
-  max-width: 104px;
-  max-height: 20px;
-  left: calc(50% - 104px/2 - 85px);
-  top: 210px;
-  font-size: 12px;
-  line-height: 11px;
+.header__title {
+  padding: 62px 586px 15px 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: /*20px*/6.25vw;
+  line-height: /*19px*/5.9vw;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 25px;
+  padding-left: 20px;
+}
+
+.header__txt{
+  padding-right: /*10px*/3.125vw;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: /*12px*/3.750vw;
+  line-height: /*11px*/3.4vw;
 }
 
 .header__arrow div {
-  position: relative;
-  top: -48px;
-  width: 46px;
+  position: absolute;
+  top: 0;
+  width: /*46px*/14.4vw;
   height: 1px;
   background-color: #ffffff;
-  left: calc(50% - 46px/2 + 100px);
-  display: block;
 }
 
 .section__title {
@@ -4861,326 +2989,3 @@ and (max-width: 320px)
   background: #C4C4C4;
 }
 }
-
-/*@media screen and (max-width: 316px)
-and (min-width: 265px) {
-
-.body,
-.container {
-  max-width: 100%;
-  max-width: 316px;
-  min-width: 265px;
-  margin: 0 auto;
-}
-
-.logo,
-.nav,
-.nav__second,
-.form,
-.usa,
-.header__img,
-.header__img-tablet {
-  display: none;
-}
-
-.logo-burger {
-  display: block;
-  width: 50%;
-  max-width: 78px;
-  margin-top: 20px;
-  margin-right: 115px;
-  margin-left: 20px;
-}
-
-.wrapper {
-  display: inline-block;
-  cursor: pointer;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.line,
-.line1 {
-  width: 35px;
-  height: 4px;
-  background-color: #000000;
-}
-
-.line {
-  margin-bottom: 3px;
-}
-
-.header__img-phone {
-  display: block;
-  background-image: url(img/rob-potter-320.png);
-  margin-bottom: 0;
-  height: 191px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.header__title {
-  max-width: 206px;
-  max-height: 67px;
-  left: calc(50% - 206px/2 - 20px);
-  top: 120px;
-  font-size: 18px;
-  line-height: 17px;
-}
-
-.header__txt {
-  max-width: 104px;
-  max-height: 20px;
-  left: calc(50% - 104px/2 - 71px);
-  top: 190px;
-  font-size: 11px;
-  line-height: 10px;
-}
-
-.header__arrow div {
-  position: relative;
-  top: -58px;
-  width: 46px;
-  height: 1px;
-  background-color: #ffffff;
-  left: calc(50% - 46px/2 + 95px);
-  display: block;
-}
-
-.section__title {
-  font-size: 20px;
-  line-height: 19px;
-  margin-top: 33px;
-  margin-bottom: 0;
-  padding-bottom: 1px;
-} 
-
-.column1 {
-  max-width: 250px;
-  margin-bottom: 8px;
-  margin-right: 19px;
-  margin-left: 20px;
-}
-
-.column2,
-.column3,
-.column4,
-.col__img1170,
-.col__img1024,
-.col__img768 {
-  display: none;
-}
-
-.col__img375-320 {
-  display: flex;
-  width: auto;
-  height: auto;
-  margin: 0 57px 17px 62px;
-}
-
-.col__item {
-  margin: 0 70px 6px 15px;
-  padding: 0;
-  font-size: 13px;
-  line-height: 12px;
-}
-
-.section__price {
-  font-size: 18px;
-  line-height: 19px;
-  margin: 0 50px 34px 15px;
-  padding-right: 30px;
-}
-
-.section__item_yellow,
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  width: 11px;
-  height: 11px;
-}
-
-.section__item_yellow:hover,
-.section__item_black:hover,
-.section__item_red768:hover,
-.section__item_gray768:hover {
-  width: 13px;
-  height: 13px;
-}
-
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  margin-right: 1px;
-}
-
-.section__item_yellow {
-   margin-right: 0;
-}
-
-.section__item_red768 {
-  background:  #B62E3C;
-}
-
-.section__item_gray768 {
-  background: #C4C4C4;
-}
-}
-
-@media screen
-and (max-width: 264px){
-
-.body,
-.container {
-  max-width: 100%;
-  max-width: 264px;
-  margin: 0 auto;
-}
-
-.logo,
-.nav,
-.nav__second,
-.form,
-.usa,
-.header__img,
-.header__img-tablet {
-  display: none;
-}
-
-.logo-burger {
-  display: block;
-  width: 50%;
-  max-width: 78px;
-  margin-top: 20px;
-  margin-right: 100px;
-  margin-left: 20px;
-}
-
-.wrapper {
-  display: inline-block;
-  cursor: pointer;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.line,
-.line1 {
-  width: 35px;
-  height: 4px;
-  background-color: #000000;
-}
-
-.line {
-  margin-bottom: 3px;
-}
-
-.header__img-phone {
-  display: block;
-  background-image: url(img/rob-potter-320.png);
-  margin-bottom: 0;
-  height: 170px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.header__title {
-  max-width: 206px;
-  max-height: 67px;
-  left: calc(50% - 206px/2 - 10px);
-  top: 110px;
-  font-size: 16px;
-  line-height: 15px;
-}
-
-.header__txt {
-  max-width: 104px;
-  max-height: 20px;
-  left: calc(50% - 104px/2 - 60px);
-  top: 170px;
-  font-size: 11px;
-  line-height: 10px;
-}
-
-.header__arrow div {
-  position: relative;
-  top: -58px;
-  width: 46px;
-  height: 1px;
-  background-color: #ffffff;
-  left: calc(50% - 46px/2 + 80px);
-  display: block;
-}
-
-.section__title {
-  font-size: 16px;
-  line-height: 15px;
-  margin-top: 30px;
-  margin-bottom: 0;
-  padding-bottom: 1px;
-} 
-
-.column1 {
-  max-width: 250px;
-  margin-bottom: 8px;
-  margin-right: 19px;
-  margin-left: 20px;
-}
-
-.column2,
-.column3,
-.column4,
-.col__img1170,
-.col__img1024,
-.col__img768 {
-  display: none;
-}
-
-.col__img375-320 {
-  display: flex;
-  width: auto;
-  height: auto;
-  margin: 0 57px 17px 50px;
-}
-
-.col__item {
-  margin: 0 70px 6px 15px;
-  padding: 0;
-  font-size: 13px;
-  line-height: 12px;
-}
-
-.section__price {
-  font-size: 18px;
-  line-height: 19px;
-  margin: 0 50px 34px 15px;
-  padding-right: 30px;
-}
-
-.section__item_yellow,
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  width: 11px;
-  height: 11px;
-}
-
-.section__item_black,
-.section__item_red768,
-.section__item_gray768 {
-  margin-right: 1px;
-}
-
-.section__item_yellow {
-   margin-right: 0;
-}
-
-.section__item_red768 {
-  background:  #B62E3C;
-}
-
-.section__item_gray768 {
-  background: #C4C4C4;
-}
-}*/
-
-
