@@ -181,7 +181,6 @@
 }
 
 .header__block-two{
-  /*position: absolute;*/
   width: 100%;
   max-width: 195px;
   height: 87px;
@@ -589,7 +588,7 @@ and (min-width: /*1921*/1759px) {
   position: relative;
   width: 100%;
   max-width: 1805px;
-  height: 491px;
+  min-height: 485px;
   background-image: url(img/rob-potter.jpg);
   background-repeat: no-repeat;
 }
@@ -2084,12 +2083,14 @@ and (min-width: 551px) {
 }
 
 .header__image {
-  /*width: 100%;*/
-  max-width: 768px/*100vw*/;
-  height: 407px/*40.5vh*/;
+  max-width: 768px;
+  height: 415px;
+  min-height: 300px;
   background-image: url(img/rob-potter-tablet.png);
   background-repeat: no-repeat;
   margin-bottom: 55px;
+  /*background-size: 100%;*/
+  background-size: cover;
 } 
 
 .header__block-two {
@@ -2342,8 +2343,6 @@ and (min-width: 376px) {
 .wrapper {
   display: inline-block;
   cursor: pointer;
-  /*margin-top: 46px;
-  margin-bottom: 42px;*/
   margin: 0;
   padding-top: /*46px*/5.99vw;
   padding-bottom: /*42px*/5.46vw;
@@ -2361,12 +2360,12 @@ and (min-width: 376px) {
 }
 
 .header__image {
-  /*width: 100%;*/
   max-width: /*550px*/100vw;
-  height: /*297px*/29vh;
+  min-height: 250px/*29vh*/;
   background-image: url(img/rob-potter-tablet.png);
   background-repeat: no-repeat;
   margin-bottom: 39px;
+  background-size: cover;
 } 
 
 .header__block-two {
@@ -2601,15 +2600,6 @@ and (min-width: 321px) {
   padding-bottom: 26px;
 }
 
-/*.logo-burger {
-  display: block;
-  width: 67%;
-  max-width: 104px;
-  margin-top: 24px;
-  margin-right: 135px;
-  margin-left: 48px;
-}*/
-
 .logo,
 .nav,
 .nav__second,
@@ -2640,14 +2630,13 @@ and (min-width: 321px) {
 }
 
 .header__image {
-  /*position: relative;*/
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
   max-width: 375px;
   height: 191px;
+  min-height: 191px;
   background-image: url(img/rob-potter-375.png);
   background-repeat: no-repeat;
+  background-size: cover;
 } 
 
 .header__block-two {
@@ -2825,15 +2814,6 @@ and (max-width: 320px) {
   padding-bottom: 26px;
 }
 
-/*.logo-burger {
-  display: block;
-  width: 67%;
-  max-width: 104px;
-  margin-top: 24px;
-  margin-right: 135px;
-  margin-left: 20px;
-}*/
-
 .wrapper {
   margin: 0;
   display: inline-block;
@@ -2854,12 +2834,14 @@ and (max-width: 320px) {
 }
 
 .header__image {
-  position: relative;
-  width: 100%;
+  /*position: relative;*/
+  /*width: 100%;*/
   max-width: 320px;
   height: 191px;
+  min-height: 100px;
   background-image: url(img/rob-potter-320.png);
   background-repeat: no-repeat;
+  background-size: cover;
 } 
 
 .header__block-two {
