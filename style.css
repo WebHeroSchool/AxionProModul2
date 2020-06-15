@@ -11,6 +11,11 @@
   box-sizing: border-box;
 }
 
+html,
+.body {
+  overflow-x: hidden;
+}
+
 .body {
   width: 100%;
   max-width: 1170px;
@@ -285,6 +290,7 @@
 .wrap {
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2034,6 +2040,7 @@ and (min-width: 551px) {
   max-width: 768px;
   min-width: 551px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .header__block{
