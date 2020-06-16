@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-family: "Gotham Pro";
+  font-family: "Gotham Pro", sans-serif;
   font-size: 12px;
   line-height: 11px;
 }
@@ -11,15 +11,14 @@
   box-sizing: border-box;
 }
 
-html,
-.body {
+/*html {
   overflow-x: hidden;
-}
+}*/
 
 .body {
   width: 100%;
   max-width: 1170px;
-  margin: 0 auto;	
+  margin: 0 auto;
 }
 
 /* container
@@ -122,26 +121,6 @@ html,
   font-size: 12px;
   color: #000000;
 }
-
-/*.nav__link-one{
-  background: black;
-  padding: 2px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  max-width: 15px;
-  max-height: 15px;
-  vertical-align: middle;
-}
-
-.number{
-	font-size: 10px;
-	color: white;
-}*/
 
 /* рисуем черный кружок и в нем цифру 1
 ========================= */
@@ -282,15 +261,10 @@ html,
 
 /* обертка для колонок с товаром
 ========================= */
-/*.wrap {
-  overflow: hidden;
-  margin: 0 auto;
-}*/
-
 .wrap {
   display: flex;
   justify-content: center;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   margin-right: auto;
   margin-left: auto;
 }
@@ -326,7 +300,6 @@ html,
 .col__img1170{
   width: 100%;
   max-width: 188px;
- /* max-height: 173px; */
   margin-top: 0;
   margin-right:  19px;
   margin-bottom: 24px;
@@ -500,8 +473,9 @@ and (min-width: /*1921*/1759px) {
 .body {
   width: 100%;
   max-width: 2050px;
-  min-width: /*1921*/1759px;
-  margin: 0 auto;	
+  min-width: 1759px;
+  margin: 0 auto;
+  overflow-x: hidden;	
 }
 
 .container {
@@ -830,7 +804,8 @@ and (min-width: 1551px) {
   width: 100%;
   max-width: 1758px;
   min-width: 1551px;
-  margin: 0 auto;	
+  margin: 0 auto;
+  overflow-x: hidden;	
 }
 
 .container {
@@ -1114,7 +1089,8 @@ and (min-width: 1025px) {
   width: 100%;
   max-width: 1046px;
   min-width: 1025px;
-  margin: 0 auto;	
+  margin: 0 auto;
+  overflow-x: hidden;	
 }
 
 .container {
@@ -1305,7 +1281,8 @@ and (min-width: 947px) {
   width: 100%;
   max-width: 1024px;
   min-width: 947px;
-  margin: 0 auto;	
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .container {
@@ -1478,7 +1455,7 @@ and (min-width: 947px) {
   display: inline-block;
   width: 100%;
   max-width: 170px;
-  max-height: 173px;
+  /* max-height: 173px; */
   margin-right:  17px;
   margin-bottom: 24px;
   margin-left: 21px;		
@@ -1577,7 +1554,8 @@ and (min-width: 887px) {
   width: 100%;
   max-width: 946px;
   min-width: 887px;
-  margin: 0 auto;	
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .container {
@@ -1858,6 +1836,7 @@ and (min-width: 769px) {
   max-width: 886px;
   min-width: 769px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .container {
@@ -2041,6 +2020,7 @@ and (min-width: 551px) {
   min-width: 551px;
   margin: 0 auto;
   padding: 0;
+  overflow-x: hidden;	
 }
 
 .header__block{
@@ -2095,7 +2075,7 @@ and (min-width: 551px) {
   min-height: 300px;
   background-image: url(img/rob-potter-tablet.png);
   background-repeat: no-repeat;
-  margin-bottom: 55px;
+  /*margin-bottom: 55px;*/
   /*background-size: 100%;*/
   background-size: cover;
 } 
@@ -2179,8 +2159,8 @@ and (min-width: 551px) {
 }
 
 .section__title {
-  font-size: 30px;
-  line-height: 29px;
+  font-size: /*30px*/3.9vw;
+  line-height: /*29px*/3.8vw;
   /*margin-top: 67px;*/
   margin-bottom: 21px;
   padding-bottom: 1px;
@@ -2196,7 +2176,7 @@ and (min-width: 551px) {
 
 .column1,
 .column2 {
-  max-width: 275px;
+  max-width: /*275px*/35.8vw;
   margin-bottom: 14px;
 }
 
@@ -2212,7 +2192,7 @@ and (min-width: 551px) {
 }
 
 .column1 {
-  margin-right: 55px;
+  margin-right: /*55px*/7.16vw;
   /*margin-left: 69px;*/
 }
 
@@ -2223,35 +2203,46 @@ and (min-width: 551px) {
 
 .col__img768 {
   display: inline-block;
-  max-width: 230;
-  margin: 0 23px 18px 28px;
+  width: 100%;
+  max-width: /*230px*/29.95vw;
+  margin: /*0 23px 18px 28px*/0 2.99vw 2.34vw 3.64vw;
 }
 
 .col__item {
-  margin: 0px 15px 8px 15px;
-  padding-top: 6px;
-  font-size: 20px;
-  line-height: 19px;
+  margin: /*0 15px 8px 15px*/0 1.95vw 1.04vw 1.95vw;
+  padding-top: /*6px*/0.78vw;
+  font-size: /*20px*/2.6vw;
+  line-height: /*19px*/2.47vw;
 }
 
 .col__item_small768 {
-  margin: 0 0 8px 14px;
-  padding-top: 6px;
-  font-size: 20px;
-  line-height: 19px;
+  margin: /*0 0 8px 14px*/0 0 1.04vw 1.82vw;
+  padding-top: /*6px*/0.78vw;
+  font-size: /*20px*/2.6vw;
+  line-height: /*19px*/2.47vw;
+}
+
+.section__price-circles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__item {
+  display: flex;
+  justify-content: space-between;	
 }
 
 .section__price {
-  font-size: 25px;
-  line-height: 24px;
-  margin: 0 55px 28px 15px;
+  font-size: /*25px*/3.26vw;
+  line-height: /*24px*/3.12vw;
+  margin: /*0 55px 28px 15px*/0 7.16vw 3.65vw 1.95vw;
 }
 
 .section__price_small768 {
-  font-size: 25px;
-  line-height: 24px;
-  max-width: 105px;
-  margin: 0 60px 28px 14px;	
+  font-size: /*25px*/3.26vw;
+  line-height: /*24px*/3.12vw;
+  max-width: /*105px*/13.7vw;
+  margin: /*0 60px 28px 14px*/0 7.8vw 3.65vw 1.82vw;	
 }
 
 .section__item_gray,
@@ -2262,8 +2253,8 @@ and (min-width: 551px) {
 .section__item_burgundy,
 .section__item_red768,
 .section__item_gray768 {
-  width: 20px;
-  height: 20px;
+  width: /*20px*/2.6vw;
+  height: 20px/*2vh*/;
 }
 
 .section__item_gray:hover,
@@ -2274,8 +2265,8 @@ and (min-width: 551px) {
 .section__item_burgundy:hover,
 .section__item_red768:hover,
 .section__item_gray768:hover {
-  width: 22px;
-  height: 22px;
+  width: /*22px*/2.86vw;
+  height: /*22px*/2.6vh;
 }
 
 .section__item_gray,
@@ -2324,7 +2315,8 @@ and (min-width: 376px) {
   justify-content: space-between;
   padding-left: 31px;
   padding-right: 32px;
-  min-height: 72px;	
+  min-height: 72px;
+  overflow-x: hidden;
 }
 
 .logo-burger {
@@ -2369,6 +2361,7 @@ and (min-width: 376px) {
 .header__image {
   max-width: /*550px*/100vw;
   min-height: 250px/*29vh*/;
+  height: auto;
   background-image: url(img/rob-potter-tablet.png);
   background-repeat: no-repeat;
   margin-bottom: 39px;
@@ -2454,10 +2447,9 @@ and (min-width: 376px) {
 }
 
 .section__title {
-  font-size: 30px;
-  line-height: 29px;
-  /*margin-top: 67px;*/
-  margin-bottom: 21px;
+  font-size: /*30px*/5.5vw;
+  line-height: /*29px*/5.3vw;
+  margin-bottom: /*21px*/3.8vw;
   padding-bottom: 1px;
 } 
 
@@ -2467,12 +2459,13 @@ and (min-width: 376px) {
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
+  overflow-x: hidden;
 }
 
 .column1,
 .column2 {
-  max-width: 275px;
-  margin-bottom: 14px;
+  max-width: /*275px*/50vw;
+  margin-bottom: /*14px*/2.5vw;
 }
 
 .column3,
@@ -2487,46 +2480,54 @@ and (min-width: 376px) {
 }
 
 .column1 {
-  margin-right: 55px;
-  /*margin-left: 69px;*/
+  margin-right: /*55px*/10vw;
 }
 
 .column2 {
   margin-left: 0;
-  /*margin-right: 70px;*/
 }
 
 .col__img768 {
   display: inline-block;
-  max-width: 230;
-  margin: 0 23px 18px 28px;
+  max-width: /*180px*/32.7vw;
+  margin: /*0 23px 18px 28px*/0 4.2vw 3.3vw 5.1vw;
 }
 
 .col__item {
-  margin: 0px 15px 8px 15px;
-  padding-top: 6px;
-  font-size: 20px;
-  line-height: 19px;
+  margin: /*0 15px 8px 15px*/0 2.7vw 1.5vw 2.7vw;
+  padding-top: /*6px*/1.1vw;
+  font-size: /*15px*/2.7vw;
+  line-height: /*14px*/2.5vw;
 }
 
 .col__item_small768 {
-  margin: 0 0 8px 14px;
-  padding-top: 6px;
-  font-size: 20px;
-  line-height: 19px;
+  margin: /*0 0 8px 14px*/0 0 1.5vw 2.5vw;
+  padding-top: /*6px*/1.1vw;
+  font-size: /*15px*/2.7vw;
+  line-height: /*14px*/2.5vw;
+}
+
+.section__price-circles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__item {
+  display: flex;
+  justify-content: space-between;	
 }
 
 .section__price {
-  font-size: 25px;
-  line-height: 24px;
-  margin: 0 55px 28px 15px;
+  font-size: /*25px*/4.5vw;
+  line-height: /*24px*/4.3vw;
+  margin: /*0 55px 28px 15px*/0 10vw 5.1vw 2.7vw;
 }
 
 .section__price_small768 {
-  font-size: 25px;
-  line-height: 24px;
-  max-width: 105px;
-  margin: 0 60px 28px 14px;	
+  font-size: /*25px*/4.5vw;
+  line-height: /*24px*/4.3vw;
+  max-width: /*105px*/19.1vw;
+  margin: /*0 60px 28px 14px*/0 10.9vw 5.1vw 2.5vw;	
 }
 
 .section__item_gray,
@@ -2537,8 +2538,8 @@ and (min-width: 376px) {
 .section__item_burgundy,
 .section__item_red768,
 .section__item_gray768 {
-  width: 20px;
-  height: 20px;
+  width: /*14px*/2.5vw;
+  height: /*14px*/2.3vw;
 }
 
 .section__item_gray:hover,
@@ -2549,8 +2550,8 @@ and (min-width: 376px) {
 .section__item_burgundy:hover,
 .section__item_red768:hover,
 .section__item_gray768:hover {
-  width: 22px;
-  height: 22px;
+  width: 16px;
+  height: 16px;
 }
 
 .section__item_gray,
@@ -2585,6 +2586,7 @@ and (min-width: 321px) {
   max-width: 375px;
   min-width: 321px;
   margin: 0 auto;
+  /*overflow-x: hidden;*/
 }
 
 .header__block{
@@ -2593,7 +2595,8 @@ and (min-width: 321px) {
   justify-content: space-between;
   padding-left: 48px;
   padding-right: 47px;
-  min-height: 72px;	
+  min-height: 72px;
+  overflow-x: hidden;
 }
 
 .logo-burger {
@@ -2623,6 +2626,7 @@ and (min-width: 321px) {
   margin: 0;
   padding-top: 28px;
   padding-bottom: 28px;
+  overflow-x: hidden;
 }
 
 .line,
@@ -2706,6 +2710,7 @@ and (min-width: 321px) {
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
+  overflow-x: hidden;
 }
 
 .column1 {
@@ -2730,6 +2735,16 @@ and (min-width: 321px) {
   width: auto;
   height: auto;
   margin: 0 57px 17px 62px;
+}
+
+.section__price-circles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__item {
+  display: flex;
+  justify-content: space-between;	
 }
 
 .col__item {
@@ -2789,6 +2804,7 @@ and (max-width: 320px) {
   max-width: 100%;
   max-width: 320px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .logo,
@@ -2808,16 +2824,14 @@ and (max-width: 320px) {
   min-height: 72px;
   padding-left: 20px;
   padding-right: 20px;
+  /*overflow-x: hidden;*/
 }
 
 .logo-burger {
   display: inline-block;
   max-width: /*104px*/32.5vw;
-  /*min-width: 104px;*/
-  /*margin: 42px 464px 38px 43px;*/
   margin: 0;
   padding-top: 24px;
-  /*padding-right: 464px;*/
   padding-bottom: 26px;
 }
 
@@ -2841,14 +2855,13 @@ and (max-width: 320px) {
 }
 
 .header__image {
-  /*position: relative;*/
-  /*width: 100%;*/
   max-width: 320px;
   height: 191px;
   min-height: 100px;
   background-image: url(img/rob-potter-320.png);
   background-repeat: no-repeat;
   background-size: cover;
+  /*overflow-x: hidden;*/
 } 
 
 .header__block-two {
@@ -2893,8 +2906,8 @@ and (max-width: 320px) {
 }
 
 .section__title {
-  font-size: 20px;
-  line-height: 19px;
+  font-size: /*20px*/6.3vw;
+  line-height: /*19px*/5.9vw;
   margin-top: 33px;
   margin-bottom: 0;
   padding-bottom: 1px;
@@ -2905,13 +2918,14 @@ and (max-width: 320px) {
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
+  /*overflow-x: hidden;*/
 }
 
 .column1 {
-  max-width: 281px;
+  max-width: /*281px*/87.8vw;
   margin-bottom: 8px;
-  margin-right: 19px;
-  margin-left: 20px;
+  /*margin-right: 19px;
+  margin-left: 20px;*/
 }
 
 .column2,
@@ -2925,31 +2939,43 @@ and (max-width: 320px) {
 
 .col__img375-320 {
   display: flex;
-  width: auto;
-  height: auto;
-  margin: 0 57px 17px 62px;
+  width: 100%;
+  width: /*auto*/50.6vw;
+  height: /*auto*/51.6vw;
+  margin: /*0 57px 17px 62px*/0 17.8vw 5.3vw 19.4vw;
+}
+
+.section__price-circles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__item {
+  display: flex;
+  justify-content: space-between;	
 }
 
 .col__item {
   margin: 0 86px 6px 15px;
   padding: 0;
-  font-size: 15px;
-  line-height: 14px;
+  font-size: /*15px*/4.69vw;
+  line-height: /*14px*/4.4vw;
+  white-space: nowrap;
 }
 
 .section__price {
-  font-size: 20px;
-  line-height: 19px;
-  margin: 0 86px 34px 15px;
-  padding-right: 30px;
+  font-size: /*20px*/6.25vw;
+  line-height: /*19px*/5.9vw;
+  margin: /*0 86px 34px 15px*/0 26.9vw 10.6vw 4.7vw;
+  padding-right: /*30px*/9.4vw;
 }
 
 .section__item_yellow,
 .section__item_black,
 .section__item_red768,
 .section__item_gray768 {
-  width: 15px;
-  height: 15px;
+  width: /*15px*/4.69vw;
+  height: /*15px*/4.5vw;
 }
 
 .section__item_yellow:hover,
