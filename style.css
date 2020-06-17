@@ -2303,11 +2303,15 @@ and (min-width: 376px) {
   margin: 0 auto;
 }
 
-.header {
-  width: 100%;
-  max-height: /*379px*/37vh;
-  min-height: /*263px*/25.7vh;
+.body{
+  overflow-x: hidden;
 }
+
+/*.header {
+  width: 100%;
+  max-height: 379px;
+  min-height: 263px;
+}*/
 
 .header__block{
   display: flex;
@@ -2316,7 +2320,6 @@ and (min-width: 376px) {
   padding-left: 31px;
   padding-right: 32px;
   min-height: 72px;
-  overflow-x: hidden;
 }
 
 .logo-burger {
@@ -2454,7 +2457,6 @@ and (min-width: 376px) {
 } 
 
 .wrap {
-  /*max-width: 627px;*/
   display: flex;
   justify-content: center;
   margin-right: auto;
@@ -2586,7 +2588,10 @@ and (min-width: 321px) {
   max-width: 375px;
   min-width: 321px;
   margin: 0 auto;
-  /*overflow-x: hidden;*/
+}
+
+.body {
+  overflow-x: hidden;	
 }
 
 .header__block{
@@ -2596,17 +2601,15 @@ and (min-width: 321px) {
   padding-left: 48px;
   padding-right: 47px;
   min-height: 72px;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 .logo-burger {
   display: inline-block;
   max-width: 104px;
   min-width: 104px;
-  /*margin: 42px 464px 38px 43px;*/
   margin: 0;
   padding-top: 24px;
-  /*padding-right: 464px;*/
   padding-bottom: 26px;
 }
 
@@ -2626,7 +2629,7 @@ and (min-width: 321px) {
   margin: 0;
   padding-top: 28px;
   padding-bottom: 28px;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 .line,
@@ -2710,7 +2713,7 @@ and (min-width: 321px) {
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 .column1 {
