@@ -2019,8 +2019,11 @@ and (min-width: 551px) {
   max-width: 768px;
   min-width: 551px;
   margin: 0 auto;
-  padding: 0;
-  overflow-x: hidden;	
+  padding: 0;	
+}
+
+.body{
+  overflow-x: hidden;
 }
 
 .header__block{
@@ -2167,7 +2170,6 @@ and (min-width: 551px) {
 } 
 
 .wrap {
-  /*max-width: 627px;*/
   display: flex;
   justify-content: center;
   margin-right: auto;
@@ -2279,9 +2281,9 @@ and (min-width: 551px) {
   margin-right: 3px;
 }
 
-.sectin__item {
+/*.section__item {
   max-width: 95px;
-}
+}*/
 
 .section__item_red768 {
   background: #B62E3C;
@@ -2303,7 +2305,7 @@ and (min-width: 376px) {
   margin: 0 auto;
 }
 
-.body{
+.body {
   overflow-x: hidden;
 }
 
@@ -2313,7 +2315,7 @@ and (min-width: 376px) {
   min-height: 263px;
 }*/
 
-.header__block{
+.header__block {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2325,10 +2327,8 @@ and (min-width: 376px) {
 .logo-burger {
   display: inline-block;
   max-width: /*156px*/20.3vw;
-  /*margin: 42px 464px 38px 43px;*/
   margin: 0;
   padding-top: /*42px*/5.5vw;
-  /*padding-right: 464px;*/
   padding-bottom: /*38px*/4.9vw;
 }
 
@@ -2382,6 +2382,7 @@ and (min-width: 376px) {
 
 .header__title {
   padding-bottom: /*37px*/6vw;
+  padding-right: 0;
   font-style: normal;
   font-weight: bold;
   font-size: /*50px*/6.5vw;
@@ -2461,12 +2462,11 @@ and (min-width: 376px) {
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  overflow-x: hidden;
 }
 
 .column1,
 .column2 {
-  max-width: /*275px*/50vw;
+  max-width: 40vw;
   margin-bottom: /*14px*/2.5vw;
 }
 
@@ -2482,7 +2482,7 @@ and (min-width: 376px) {
 }
 
 .column1 {
-  margin-right: /*55px*/10vw;
+  margin-right: 3vw;
 }
 
 .column2 {
@@ -2516,7 +2516,8 @@ and (min-width: 376px) {
 
 .section__item {
   display: flex;
-  justify-content: space-between;	
+  justify-content: space-between;
+  /*max-width: 95px;*/	
 }
 
 .section__price {
@@ -2566,10 +2567,6 @@ and (min-width: 376px) {
   margin-right: 3px;
 }
 
-.sectin__item {
-  max-width: 95px;
-}
-
 .section__item_red768 {
   background: #B62E3C;
 }
@@ -2601,7 +2598,6 @@ and (min-width: 321px) {
   padding-left: 48px;
   padding-right: 47px;
   min-height: 72px;
-  /*overflow-x: hidden;*/
 }
 
 .logo-burger {
@@ -2629,7 +2625,6 @@ and (min-width: 321px) {
   margin: 0;
   padding-top: 28px;
   padding-bottom: 28px;
-  /*overflow-x: hidden;*/
 }
 
 .line,
@@ -2656,14 +2651,12 @@ and (min-width: 321px) {
 .header__block-two {
   margin-top: -30px;
   margin-left: -10px;
-  /*margin-right: 121px;*/
   padding-bottom: 33px;
   max-width: 206px;
   height: 339px;
 }
 
 .header__title {
-  /*padding: 62px 586px 9px 37px;*/
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -2677,8 +2670,6 @@ and (min-width: 321px) {
   display: flex;
   align-items: center;
   padding-top: 0;
-  /*padding-bottom: 25px;
-  padding-left: 37px;*/
 }
 
 .header__txt{
@@ -2713,7 +2704,6 @@ and (min-width: 321px) {
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  /*overflow-x: hidden;*/
 }
 
 .column1 {
@@ -2807,6 +2797,9 @@ and (max-width: 320px) {
   max-width: 100%;
   max-width: 320px;
   margin: 0 auto;
+}
+
+.body{
   overflow-x: hidden;
 }
 
@@ -2827,7 +2820,6 @@ and (max-width: 320px) {
   min-height: 72px;
   padding-left: 20px;
   padding-right: 20px;
-  /*overflow-x: hidden;*/
 }
 
 .logo-burger {
@@ -2864,7 +2856,6 @@ and (max-width: 320px) {
   background-image: url(img/rob-potter-320.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /*overflow-x: hidden;*/
 } 
 
 .header__block-two {
@@ -2921,14 +2912,11 @@ and (max-width: 320px) {
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  /*overflow-x: hidden;*/
 }
 
 .column1 {
   max-width: /*281px*/87.8vw;
   margin-bottom: 8px;
-  /*margin-right: 19px;
-  margin-left: 20px;*/
 }
 
 .column2,
