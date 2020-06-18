@@ -1,0 +1,3002 @@
+* {
+  margin: 0;
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 12px;
+  line-height: 11px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*html {
+  overflow-x: hidden;
+}*/
+
+.body {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* container
+========================= */
+.container {
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+/* делю головную часть на лево...
+========================= */
+.header__block-left {
+  display: flex;
+  float: left;
+}
+
+/* ... и право
+========================= */
+.header__block-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* верхняя часть с логотипом и навигацией
+========================= */
+.logo {
+  width: 100%;
+  margin: 32px 45px 29px 0;
+  max-width: 55px;
+  max-height: 55px;
+}
+
+.logo-burger {
+  display: none;
+}
+
+/* навигация левой части верхушки
+========================= */
+.nav {
+  display: inline-block;
+  padding: 54px 81px 50px 0;
+}
+
+/* навигация правой части верхушки
+========================= */
+.nav__second {
+  display: inline-block;
+  padding: 54px 0 50px 0;
+  vertical-align: middle;
+  align-items: center;
+}
+
+/* ссылки меню
+========================= */
+.nav__link {
+  padding-right: 35px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* форма поиска по сайту
+========================= */
+.form {
+  display: flex;
+  max-width: 178px;
+  max-height: 24px;
+  margin: 48px 35px 44px 0;
+  padding: 0;
+  border-left: none;
+  border-top: none;
+  border-right: none; 
+  border-bottom: 1px solid #000000;
+  background: transparent;
+  align-items: center;
+
+}
+
+.form-img {
+  float: right;
+  padding-top: 5px;
+  padding-right: 1px;
+  padding-bottom: 5px;
+  border-bottom: transparent;
+}
+
+.input {
+  border: 0;
+}
+ 
+/* ссылка меню с покупной корзиной
+========================= */
+
+.nav__link-cart {
+  padding-right: 4px;
+  font-size: 12px;
+  color: #000000;
+}
+
+/* рисуем черный кружок и в нем цифру 1
+========================= */
+.nav__link-one {
+  display: inline-block;
+  font-size: 10px;
+  line-height: 15px;
+  width: 15px;
+  height: 15px;
+  max-width: 15px;
+  max-height: 15px;
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+}
+
+/* кнопка с флагом сша
+========================= */
+.usa{
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.usa-image{
+  width: 100%;
+  padding: 3px 0;
+}
+
+/* картинка головной части страницы
+========================= */
+.header__image {
+  position: relative;
+  width: 100%;
+  max-width: 1030px;
+  height: 280px;
+  background-image: url(img/rob-potter.jpg);
+  background-size: 100%;
+}
+
+.header__block-two{
+  width: 100%;
+  max-width: 195px;
+  height: 87px;
+ }
+
+
+.header__title {
+  padding: 91px 775px 15px 60px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 75px;
+  padding-left: 60px;
+}
+
+.header__txt{
+  padding-right: 6px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+/* стрелка в картинке головной части страницы
+========================= */
+
+.header__arrow {
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 0;
+  margin: 0;
+}
+
+.header__arrow div {
+  position: absolute;
+  top: 0;
+  width: 43px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.header__arrow div::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  top: -2px;
+  right: 0px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.header__arrow div::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  top: 3px;
+  right: 0px;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+/* Section
+========================= */
+
+.section__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 21px;
+  text-align:  center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-top: 54px;
+  margin-bottom: 15px;
+  padding-bottom: 1px;
+} 
+
+/* обертка для колонок с товаром
+========================= */
+.wrap {
+  display: flex;
+  justify-content: center;
+  /*overflow-x: hidden;*/
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.column1,
+.column2,
+.column3,
+.column4 {
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  max-width: 230px;
+  margin-bottom: 26px;
+}
+
+.column1 {
+ margin-right: 19px;
+}
+
+.column2,
+.column3 {
+ margin-right: 18px;
+ margin-left: 18px;
+}
+
+.column4 {
+  margin-right: 0;
+  margin-left: 19px;
+}
+
+/* изображение товара
+========================= */
+.col__img1170{
+  width: 100%;
+  max-width: 188px;
+  margin-top: 0;
+  margin-right:  19px;
+  margin-bottom: 24px;
+  margin-left: 23px;
+}
+
+.col__img1024,
+.col__img768,
+.col__img375-320 {
+  display: none;	
+}
+
+
+/* описание товара
+========================= */
+.col__item {
+  margin: 0 12px 6px 12px;
+  padding-top: 6px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 11px;
+}
+
+/* цена товара
+========================= */
+.section__price {
+  display: flex;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
+  float: left;
+  margin-top: 0;
+  margin-right: 99px;
+  margin-bottom: 21px;
+  margin-left: 12px;
+}
+
+/* CIRCLE
+******************************************* */
+.section__item {
+  cursor: pointer;
+}
+
+.section__item_gray,
+.section__item_red,
+.section__item_yellow,
+.section__item_blue {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c4c4c4; 
+  border: none;
+}
+
+.section__item_gray:hover,
+.section__item_red:hover,
+.section__item_yellow:hover,
+.section__item_blue:hover {
+  width: 9px;
+  height: 9px;
+}
+
+.section__item_gray{
+  background: #c4c4c4;
+  margin-right: 6px;
+}
+
+.section__item_red {
+  background: #b62e3c;
+  margin-right: 6px;
+}
+
+.section__item_yellow {
+  background: #fdb431;
+  margin-right: 6px; /* из головы */
+}
+
+.section__item_blue {
+  background: #41479b;
+  margin-right: 6px;
+}
+
+.section__item_black,
+.section__item_peach,
+.section__item_burgundy,
+.section__item_lightblue {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 6px;
+  border-radius: 50%;
+  border: none;
+}
+
+.section__item_black:hover,
+.section__item_peach:hover,
+.section__item_burgundy:hover,
+.section__item_lightblue:hover {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 6px;
+  border-radius: 50%;
+  border: none;
+}
+
+.section__item_black {
+  background: #0E1211;
+}
+
+.section__item_peach {
+  background: #e29d69;
+}
+
+.section__item_burgundy {
+  background: #b62e3c; 
+}
+
+.section__item_lightblue {
+  background: #257da9;
+}
+
+
+/* вертикальные линии
+******************************************* */
+.column2:before {
+  content:"";
+  opacity: .1;
+  background: black;
+  width: 1px;
+  height: 100px;
+  position: absolute;
+  top: 528px;
+  margin-left: 18px;
+  left: calc(50% - 1px/2 - 282px);
+}
+
+.column3:before {
+  content:"";
+  opacity: .1;
+  background: black;
+  width: 1px;
+  height: 100px;
+  position: absolute;
+  top: 528px;
+  margin-left: 18px;
+  left: calc(50% - 1px/2 - 16px);
+}
+
+.column4:before {
+  content:"";
+  opacity: .1;
+  background: black;
+  width: 1px;
+  height: 100px;
+  position: absolute;
+  top: 528px;
+  margin-left: 18px;
+  left: calc(50% - 1px/2 + 250px);
+}
+
+
+/* Media- запросы. 
+************************** */
+@media screen 
+and (max-width: 2050px)
+and (min-width: /*1921*/1759px) {
+
+.body {
+  width: 100%;
+  max-width: 2050px;
+  min-width: 1759px;
+  margin: 0 auto;
+  overflow-x: hidden;	
+}
+
+.container {
+  width: 100%;
+  max-width: 1805px;
+  min-width: 1550px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100%;
+  max-width: 96px;
+  max-height: 96px;
+  margin: 56px 78px 51px 0;
+}
+
+.nav {
+  display: inline-block;
+  padding: 94px 141px 67px 0;
+}
+
+.nav__second {
+  display: inline-block;
+  padding: 94px 0 67px 0;
+}
+
+.nav__link {
+  padding-right: 61px;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.header__block-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav__link-cart {
+  padding-right: 1px;
+  font-size: 17px;
+}
+
+.nav__link-one {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 16px;
+  width: 20px;
+  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+}
+
+.form {
+  max-width: 343px;
+  max-height: 46px;
+  margin: 93px 67px 60px 0;
+  border-bottom: 2px solid #000000;
+  align-items: center;
+}
+
+.form-img {
+  padding-top: 5px;
+  padding-right: 1px;
+  padding-bottom: 5px;
+  border-bottom: transparent;
+}
+
+.input {
+  border: 0;
+}
+
+.usa{
+  width: 100%;
+  max-width: 20px;
+  margin-bottom: -30px;
+}
+
+.usa-image{
+  width: 100%;
+  padding: 3px 0;
+}
+
+.header__image {
+  position: relative;
+  width: 100%;
+  max-width: 1805px;
+  min-height: 485px;
+  background-image: url(img/rob-potter.jpg);
+  background-repeat: no-repeat;
+}
+
+.header__block-two {
+  /*position: absolute;*/
+  max-width: 342px;
+  height: 152px;
+}
+
+.header__title {
+  padding: 159px 1358px 26px 105px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 53px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 131px;
+  padding-left: 105px;
+}
+
+.header__txt{
+  padding-right: 11px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: 21px;
+  line-height: 20px;
+}
+
+
+.header__arrow {
+  cursor: pointer;
+  position: relative;
+  width: 80px;
+  height: 0;
+  margin: 0;
+}
+
+.header__arrow div {
+  position: absolute;
+  top: 0;
+  width: 75px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.header__arrow div::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 2px;
+  top: -2px;
+  right: 0px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.header__arrow div::before {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 2px;
+  top: 3px;
+  right: 0px;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+.section__title {
+  font-size: 38px;
+  line-height: 37px;
+  margin-top: 94px;
+  margin-bottom: 26px;
+  padding-bottom: 1px;
+} 
+
+.column1,
+.column2,
+.column3,
+.column4 {
+  max-width: 403px;
+  margin-bottom: 46px;
+}
+
+.column1 {
+ margin-right: 33px;
+}
+
+.column2,
+.column3 {
+ margin-right: 32px;
+ margin-left: 32px;
+}
+
+.column4 {
+  margin-right: 0;
+  margin-left: 33px;
+}
+
+.col__img1170{
+  width: 100%;
+  max-width: 329px;
+  margin: 0 33px 42px 40px;
+}
+
+.col__img1024,
+.col__img768,
+.col__img375-320 {
+  display: none;	
+}
+
+.col__item {
+  margin: 0 21px 11px 21px;
+  padding-top: 11px;
+  /*font-style: normal;
+  font-weight: normal;*/
+  font-size: 21px;
+  line-height: 20px;
+}
+
+.section__price {
+  font-size: 25px;
+  line-height: 24px;
+  margin: 0 173px 37px 21px;
+}
+
+.section__item {
+  cursor: pointer;
+}
+
+.section__item_gray,
+.section__item_red,
+.section__item_yellow,
+.section__item_blue {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.section__item_gray:hover,
+.section__item_red:hover,
+.section__item_yellow:hover,
+.section__item_blue:hover {
+  width: 14px;
+  height: 14px;
+}
+
+.section__item_gray{
+  background: #c4c4c4;
+  margin-right: 11px;
+}
+
+.section__item_red {
+  background: #b62e3c;
+  margin-right: 11px;
+}
+
+.section__item_yellow {
+  background: #fdb431;
+  margin-right: 11px;
+}
+
+.section__item_blue {
+  background: #41479b;
+  margin-right: 11px;
+}
+
+.section__item_black,
+.section__item_peach,
+.section__item_burgundy,
+.section__item_lightblue {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+
+.section__item_black:hover,
+.section__item_peach:hover,
+.section__item_burgundy:hover,
+.section__item_lightblue:hover {
+  width: 18px;
+  height: 18px;
+}
+
+.column2:before {
+  content:"";
+  opacity: .2;
+  height: 180px;
+  top: 940px;
+  margin-left: 18px;
+  left: calc(50% - 1px/2 - 490px);
+}
+
+.column3:before {
+  content:"";
+  opacity: .2;
+  height: 180px;
+  top: 940px;
+  margin-left: 18px;
+  left: calc(50% - 1px/2 - 40px);
+}
+
+.column4:before {
+  content:"";
+  opacity: .2;
+  height: 180px;
+  top: 940px;
+  margin-left: 18px;
+  left: calc(50% - 1px/2 + 420px);
+}
+}
+
+@media screen 
+and (max-width: 1758px)
+and (min-width: 1551px) {
+
+.body {
+  width: 100%;
+  max-width: 1758px;
+  min-width: 1551px;
+  margin: 0 auto;
+  overflow-x: hidden;	
+}
+
+.container {
+  width: 100%;
+  max-width: 1548px;
+  min-width: 1366px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100%;
+  max-width: 82px;
+  max-height: 82px;
+  margin: 47px 67px 44px 0;
+}
+
+.nav {
+  padding: 80px 120px 57px 0;
+}
+
+.nav__second {
+  padding: 80px 0 57px 0;
+}
+
+.nav__link {
+  padding-right: 52px;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.nav__link-cart {
+  padding-right: 1px;
+  font-size: 15px;
+}
+
+.nav__link-one {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 16px;
+  width: 18px;
+  height: 18px;
+  max-width: 18px;
+  max-height: 18px;
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.form {
+  max-width: 313px;
+  max-height: 42px;
+  margin: 79px 57px 73px 0;
+  padding: 0;
+  border-bottom: 1px solid #000000;
+}
+
+.form-img {
+  padding-top: 5px;
+  padding-right: 1px;
+  padding-bottom: 5px;
+  border-bottom: transparent;
+}
+
+.input {
+  border: 0;
+}
+
+.usa{
+  width: 100%;
+  max-width: 20px;
+  padding: 0;
+}
+
+.usa-image{
+  width: 100%;
+  padding: 3px 0;
+}
+
+.header__image {
+  position: relative;
+  width: 100%;
+  max-width: 1548px;
+  height: 421px;
+  background-image: url(img/rob-potter.jpg);
+  background-repeat: no-repeat;
+} 
+
+.header__block-two {
+  position: absolute;
+  /*max-width: 342px;
+  height: 152px;*/
+}
+
+.header__title {
+  padding: 136px 1165px 22px 90px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 112px;
+  padding-left: 90px;
+}
+
+.header__txt{
+  padding-right: 9px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: 18px;
+  line-height: 17px;
+}
+
+.header__arrow div {
+  position: absolute;
+  top: 0;
+  width: 75px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.section__title {
+  font-size: 35px;
+  line-height: 36px;
+  margin-top: 86px;
+  margin-bottom: 24px;
+  padding-bottom: 1px;
+} 
+
+.column1,
+.column2,
+.column3,
+.column4 {
+  max-width: 344px;
+  margin-bottom: 39px;
+}
+
+.column1 {
+ margin-right: 28px;
+}
+
+.column2,
+.column3 {
+ margin-right: 27px;
+ margin-left: 27px;
+}
+
+.column4 {
+  margin-right: 0;
+  margin-left: 28px;
+}
+
+.col__img1170{
+  width: 100%;
+  max-width: 281px;
+  margin: 0 28px 36px 34px;
+}
+
+.col__img1024,
+.col__img768,
+.col__img375-320 {
+  display: none;	
+}
+
+.col__item {
+  margin: 0 18px 9px 18px;
+  padding-top: 9px;
+  font-size: 18px;
+  line-height: 17px;
+}
+
+.section__price {
+  display: flex;
+  font-size: 21px;
+  line-height: 20px;
+  margin: 0 148px 32px 18px;
+}
+
+.section__item {
+  cursor: pointer;
+}
+
+.section__item_gray,
+.section__item_red,
+.section__item_yellow,
+.section__item_blue {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.section__item_gray:hover,
+.section__item_red:hover,
+.section__item_yellow:hover,
+.section__item_blue:hover {
+  width: 14px;
+  height: 14px;
+}
+
+.section__item_gray{
+  background: #c4c4c4;
+  margin-right: 6px;
+}
+
+.section__item_red {
+  background: #b62e3c;
+  margin-right: 6px;
+}
+
+.section__item_yellow {
+  background: #fdb431;
+  margin-right: 6px;
+} 
+
+.section__item_blue {
+  background: #41479b;
+  margin-right: 6px;
+}
+
+.section__item_black,
+.section__item_peach,
+.section__item_burgundy,
+.section__item_lightblue {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  border-radius: 50%;
+  border: none;
+}
+
+.section__item_black:hover,
+.section__item_peach:hover,
+.section__item_burgundy:hover,
+.section__item_lightblue:hover {
+  width: 18px;
+  height: 18px;
+}
+
+.column2:before {
+  content:"";
+  opacity: .2;
+  height: 150px;
+  top: 800px;
+  left: calc(50% - 1px/2 - 420px);
+}
+
+.column3:before {
+  content:"";
+  opacity: .2;
+  height: 150px;
+  top: 800px;
+  left: calc(50% - 1px/2 - 45px);
+}
+
+.column4:before {
+  content:"";
+  opacity: .2;
+  height: 150px;
+  top: 800px;
+  left: calc(50% - 1px/2 + 340px);
+}	
+}
+
+@media screen 
+and (max-width: 1046px)
+and (min-width: 1025px) {
+
+.body {
+  width: 100%;
+  max-width: 1046px;
+  min-width: 1025px;
+  margin: 0 auto;
+  overflow-x: hidden;	
+}
+
+.container {
+  width: 100%;
+  max-width: 949px;
+  min-width: 931px;
+  margin: 0 auto;
+}
+
+.form {
+  max-width: 165px;
+  max-height: 24px;
+  margin: 48px 35px 44px 0;
+  padding: 0; 
+  border-bottom: 1px solid #000000;
+}
+
+.form-img {
+  padding-top: 5px;
+  padding-right: 1px;
+  padding-bottom: 5px;
+  border-bottom: transparent;
+}
+
+.input {
+  border: 0;
+  max-width: 140px;
+}
+
+.header__image {
+  position: relative;
+  width: 100%;
+  max-width: 949px;
+  height: 253px;
+  background-image: url(img/rob-potter.jpg);
+  background-repeat: no-repeat;
+}
+
+.header__block-two {
+  position: absolute;
+}
+
+.header__title {
+  padding: 81px 693px 13px 54px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 67px;
+  padding-left: 54px;
+}
+
+.header__txt{
+  padding-right: 5px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: 11px;
+  line-height: 10px;
+}
+
+.header__arrow div {
+  position: absolute;
+  top: 0;
+  width: 46px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.column1,
+.column2,
+.column3,
+.column4 {
+  max-width: 210px;
+  margin-bottom: 26px;
+}
+
+.column1 {
+ margin-right: 10px;
+}
+
+.column2,
+.column3 {
+ margin-right: 10px;
+ margin-left: 10px;
+}
+
+.column4 {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.col__img1170 {
+  width: 100%;
+  max-width: 169px;
+  margin: 0 10px 24px 15px;
+}
+
+.column2:before {
+  content:"";
+  opacity: .1;
+  height: 100px;
+  top: 500px;
+  margin-left: 18px;
+  left: calc(50% - 1px/2 - 265px);
+}
+
+.column3:before {
+  content:"";
+  opacity: .1;
+  height: 100px;
+  top: 500px;
+  margin-left: 18px;
+  left: calc(50% - 1px/2 - 40px);
+}
+
+.column4:before {
+  content:"";
+  opacity: .1;
+  height: 100px;
+  top: 500px;
+  margin-left: 18px;
+  left: calc(50% - 1px/2 + 190px);
+}
+
+.section__price {
+  margin-right: 95px;
+}
+
+.section__item_gray{
+  background: #c4c4c4;
+  margin-right: 2px;
+}
+
+.section__item_red {
+  background: #b62e3c;
+  margin-right: 2px;
+}
+
+.section__item_yellow {
+  background: #fdb431;
+  margin-right: 2px;
+}
+
+.section__item_blue {
+  background: #41479b;
+  margin-right: 2px;
+}
+
+.section__item_black,
+.section__item_peach,
+.section__item_burgundy,
+.section__item_lightblue {
+  width: 9px;
+  height: 9px;
+  margin-right: 2px;
+  border-radius: 50%;
+}
+
+.section__item_black:hover,
+.section__item_peach:hover,
+.section__item_burgundy:hover,
+.section__item_lightblue:hover {
+  width: 11px;
+  height: 11px;
+  margin-right: 2px;
+  border-radius: 50%;
+}
+}
+
+/* Media- запросы: max=1024px;
+************************** */
+@media screen 
+and (max-width: 1024px)
+and (min-width: 947px) {
+
+.body {
+  width: 100%;
+  max-width: 1024px;
+  min-width: 947px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 930px;
+  min-width: 860px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 32px;
+  margin-right: 29px; 
+  margin-bottom: 38px; 
+  max-width: 61px;
+  height: 55px;
+}
+
+.logo-burger {
+  display: none;
+}
+
+.nav {
+  padding: 54px 35px 61px 0; 
+}
+
+.nav__second {
+  padding: 54px 0 61px 0;
+  margin-right: 2px;
+}
+
+.nav__link_ipad1 {
+  padding-right: 25px;
+}
+
+.form {
+  display: flex;
+  max-width: 161px;
+  margin: 48px 33px 58px 0;
+}
+
+.form-img {
+  border-bottom: transparent;
+}
+
+.input {
+  border: 0;
+  max-width: 140px;
+}
+
+.nav__link-one {
+  max-width: 13px;
+  max-height: 15px;
+}
+
+.usa-image{
+  margin-top: 49px;
+  margin-bottom: 61px;
+}
+
+.header__image {
+  position: relative;
+  width: 100%;
+  max-width: 930px;
+  max-height: 253px;
+  background-image: url(img/rob-potter.jpg);
+  background-repeat: no-repeat;
+} 
+
+.header__title {
+  padding: 79px 678px 13px 54px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 68px;
+  padding-left: 54px;
+}
+
+.header__txt{
+  padding-right: 7px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: 12px;
+  line-height: 11px;
+}
+
+.header__arrow {
+  cursor: pointer;
+  position: relative;
+  max-width: 50px;
+  height: 0;
+  margin: 0;
+}
+
+.header__arrow div {
+  position: absolute;
+  top: 0;
+  max-width: 46px;
+  max-height: 1px;
+  background-color: #ffffff;
+}
+
+.header__arrow div::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  top: -2px;
+  right: 0px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.header__arrow div::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  top: 3px;
+  right: 0px;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+.section__title {
+  margin-top: 67px;
+} 
+
+.column1, .column2, .column3, .column4 {
+  max-width: 208px;
+  margin-bottom: 52px;
+}
+
+.column1 {
+  margin-right: 17px;
+}
+
+.column2,
+.column3 {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.column4 {
+  margin-left: 17px;
+}
+
+.col__img1170,
+.col__img768,
+.col__img375-320 {
+  display: none;	
+}
+
+.col__img1024 {
+  display: inline-block;
+  width: 100%;
+  max-width: 170px;
+  /* max-height: 173px; */
+  margin-right:  17px;
+  margin-bottom: 24px;
+  margin-left: 21px;		
+}
+
+.col__item {
+  margin-right: 11px; 
+  margin-left: 11px;
+}
+
+.section__price {
+  margin-right: 88px;
+  margin-bottom: 21px;
+  margin-left: 11px;
+}
+
+.section__item_gray,
+.section__item_red,
+.section__item_yellow,
+.section__item_blue {
+  max-width: 6px;
+  max-height: 7px;
+}
+
+.section__item_gray:hover,
+.section__item_red:hover,
+.section__item_yellow:hover,
+.section__item_blue:hover {
+  max-width: 7px;
+  max-height: 8px;
+}
+
+.section__item_gray,
+.section__item_red,
+.section__item_blue {
+  margin-right: 4px;
+}
+
+.section__item_yellow {
+  margin-right: 4px;
+}
+
+.section__item_black,
+.section__item_peach,
+.section__item_burgundy,
+.section__item_lightblue {
+  max-width: 8px;
+  max-height: 9px;
+  margin-right: 4px;
+}
+
+.section__item_black:hover,
+.section__item_peach:hover,
+.section__item_burgundy:hover,
+.section__item_lightblue:hover {
+  max-width: 9px;
+  max-height: 10px;
+}
+
+.column2:before {
+  content:"";
+  opacity: .1;
+  height: 100px;
+  top: 528px;
+  margin-left: 18px;
+  left: calc(50% - 0px/2 - 260px);
+}
+
+.column3:before {
+  content:"";
+  opacity: .1;
+  height: 100px;
+  top: 528px;
+  margin-left: 18px;
+  left: calc(50% - 1px/2 - 18px);
+}
+
+.column4:before {
+  content:"";
+  opacity: .1;
+  height: 100px;
+  top: 528px;
+  margin-left: 18px;
+  left: calc(50% - 1px/2 + 222px);
+}
+}
+
+
+/*Media- запросы от max=946 (точка излома сайта)
+************************** */
+@media screen 
+and (max-width: 946px)
+and (min-width: 887px) {
+
+.body {
+  width: 100%;
+  max-width: 946px;
+  min-width: 887px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 852px;
+  min-width: 793px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 32px;
+  margin-right: 29px; 
+  margin-bottom: 38px; 
+  max-width: 61px;
+  height: 55px;
+}
+
+.logo-burger {
+  display: none;
+}
+
+.nav {
+  padding: 54px 20px 61px 0; 
+}
+
+.nav__second {
+  padding: 54px 0 61px 0; 
+  margin-right: 2px;
+}
+
+.nav__link_ipad1 {
+  padding-right: 25px;
+  color: #000000;	
+}
+
+.form {
+  max-width: 150px;
+  margin: 48px 33px 58px 0;
+}
+
+.form-img {
+  border-bottom: transparent;
+}
+
+.input {
+  border: 0;
+  max-width: 135px;
+}
+
+.nav__link-one {
+  display: inline-block;
+  font-size: 10px;
+  line-height: 15px;
+  width: 15px;
+  height: 15px;
+  max-width: 15px;
+  max-height: 15px;
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+}
+
+.usa-image{
+  margin-top: 49px;
+  margin-bottom: 61px;
+}
+
+
+.header__image {
+  position: relative;
+  width: 100%;
+  max-width: 852px;
+  max-height: 230px;
+  background-image: url(img/rob-potter.jpg);
+  background-repeat: no-repeat;
+} 
+
+.header__block-two {
+  position: absolute;
+}
+
+.header__title {
+  padding: 73px 626px 12px 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 63px;
+  padding-left: 50px;
+}
+
+.header__txt{
+  padding-right: 7px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: 12px;
+  line-height: 11px;
+}
+
+.header__arrow {
+  cursor: pointer;
+  position: relative;
+  max-width: 50px;
+  height: 0;
+  margin: 0;
+}
+
+.header__arrow div {
+  position: absolute;
+  top: 0;
+  max-width: 46px;
+  max-height: 1px;
+  background-color: #ffffff;
+}
+
+.header__arrow div::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  top: -2px;
+  right: 0px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.header__arrow div::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  top: 2px;
+  right: 0px;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+.section__title {
+  margin-top: 67px;
+} 
+
+.column1, .column2, .column3 {
+  max-width: 208px;
+  margin-bottom: 52px;
+}
+
+.column1 {
+  margin-right: 30px;
+  margin-left: 50px;
+}
+
+.column2 {
+  margin-right: 30px;
+  margin-left: 25px;
+}
+
+.column3 {
+  margin-right: 50px;
+  margin-left: 30px;
+}
+
+.column4 {
+  display: none;
+}
+
+.col__img1024 {
+  width: 100%;
+  max-width: 170px;
+  margin-right:  17px;
+  margin-bottom: 24px;
+  margin-left: 21px;	
+}
+
+/*.col__img1170,
+.col__img768,
+.col__img375-320 {
+  display: none;	
+}*/
+
+.col__item {
+  margin-right: 11px; 
+  margin-left: 11px;
+}
+
+.section__price {
+  margin-right: 88px;
+  margin-bottom: 21px;
+  margin-left: 11px;
+}
+
+.section__item_gray,
+.section__item_red,
+.section__item_yellow,
+.section__item_blue {
+  max-width: 6px;
+  max-height: 7px;
+}
+
+.section__item_gray:hover,
+.section__item_red:hover,
+.section__item_yellow:hover,
+.section__item_blue:hover {
+  max-width: 8px;
+  max-height: 9px;
+}
+
+.section__item_gray,
+.section__item_red,
+.section__item_blue {
+  margin-right: 4px;
+}
+
+.section__item_yellow {
+  margin-right: 4px;
+}
+
+.section__item_black,
+.section__item_peach,
+.section__item_burgundy {
+  max-width: 8px;
+  max-height: 9px;
+  margin-right: 4px;
+}
+
+.section__item_black:hover,
+.section__item_peach:hover,
+.section__item_burgundy:hover {
+  max-width: 10px;
+  max-height: 11px;
+}
+
+.column2:before {
+  content:"";
+  opacity: .1;
+  height: 100px;
+  top: 520px;
+  left: calc(50% - 0px/2 - 150px);
+}
+
+.column3:before {
+  content:"";
+  opacity: .1;
+  height: 100px;
+  top: 520px;
+  margin-left: 18px;
+  left: calc(50% - 1px/2 + 110px);
+}
+
+.column4:before {
+  display:none;
+}
+}
+
+
+/* Media- запросы от max=886 (точка излома сайта)
+************************** */
+@media screen and (max-width: 886px)
+and (min-width: 769px) {
+
+.body {
+  max-width: 100%;
+  max-width: 886px;
+  min-width: 769px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100%;
+  max-width: 792px;
+  min-width: 687px;
+  margin: 0 auto;
+}
+
+.nav__link-cart {
+  padding-right: 4px;
+  font-size: 11px;
+}
+
+.nav__link-one {
+  font-size: 10px;
+  width: 14px;
+  height: 14px;
+}
+
+.form {
+  max-width: 80px;
+  max-height: 24px;
+  margin: 48px 35px 44px 0;
+  padding: 0; 
+  border-bottom: 1px solid #000000;
+}
+
+.form-img {
+  padding-top: 5px;
+  padding-right: 1px;
+  padding-bottom: 5px;
+  border-bottom: transparent;
+}
+
+.input {
+  border: 0;
+  max-width: 70px;
+}
+
+.nav {
+  padding: 54px 30px 50px 0;
+}
+
+.nav__link {
+  font-size: 11px;
+  padding-right: 25px;
+}
+
+.nav__link-cart {
+  font-size: 11px;
+  padding-right: 4px;
+}
+
+.nav__link-one {
+  font-size: 10px;
+  line-height: 11px;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.header__image {
+  position: relative;
+  width: 100%;
+  max-width: 792px;
+  max-height: /*216px*/21vh;
+  background-image: url(img/rob-potter.jpg);
+  background-repeat: no-repeat;
+}
+
+.header__block-two {
+  position: absolute;
+}
+
+.header__title {
+  padding: 68px 586px 11px 47px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 59px;
+  padding-left: 47px;
+}
+
+.header__txt{
+  padding-right: 7px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: 12px;
+  line-height: 11px;
+}
+
+.header__arrow div {
+  position: absolute;
+  top: 0;
+  max-width: 46px;
+  max-height: 1px;
+  background-color: #ffffff;
+}
+
+.section__title {
+  font-size: 20px;
+} 
+
+.column2:before,
+.column3:before, 
+.column4:before,
+.column4 {
+  display: none;
+}
+
+.col__img1024 {
+  width: 94%;
+  max-width: 160px;
+  margin-right:  5px;
+  margin-bottom: 24px;
+  margin-left: 5px;	
+}
+.section__item_gray,
+.section__item_red,
+.section__item_yellow,
+.section__item_blue {
+  max-width: 6px;
+  max-height: 7px;
+}
+
+.section__item_gray:hover,
+.section__item_red:hover,
+.section__item_yellow:hover,
+.section__item_blue:hover {
+  max-width: 8px;
+  max-height: 9px;
+}
+
+.section__item_gray,
+.section__item_red,
+.section__item_blue,
+.section__item_yellow {
+  margin-right: 2px;
+}
+
+.section__item_black,
+.section__item_peach,
+.section__item_burgundy {
+  max-width: 8px;
+  max-height: 9px;
+  margin-right: 2px;
+}
+
+.section__item_black:hover,
+.section__item_peach:hover,
+.section__item_burgundy:hover {
+  max-width: 10px;
+  max-height: 11px;
+}
+}
+
+
+/* Media- запросы max=768px
+************************** */
+@media screen and (max-width: 768px)
+and (min-width: 551px) {
+
+.body,
+.container {
+  max-width: 100%;
+  max-width: 768px;
+  min-width: 551px;
+  margin: 0 auto;
+  padding: 0;	
+}
+
+.body{
+  overflow-x: hidden;
+}
+
+.header__block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 43px;
+  padding-right: 44px;
+  min-height: 72px;	
+}
+
+.logo-burger {
+  display: inline-block;
+  max-width: /*156px*/20.3vw;
+  margin: 0;
+  padding-top: /*42px*/5.5vw;
+  padding-bottom: /*38px*/4.9vw;
+}
+
+.logo,
+.nav,
+.nav__second,
+.form,
+.usa,
+.header__img,
+.header__img-phone {
+  display: none;
+}
+
+.wrapper {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  padding-top: /*46px*/5.99vw;
+  padding-bottom: /*42px*/5.46vw;
+}
+
+.line,
+.line1 {
+  width: /*61px*/7.9vw;
+  height: /*9px*/0.88vh;
+  background-color: #000000;
+}
+
+.line {
+  margin-bottom: /*8px*/1vw;
+}
+
+.header__image {
+  max-width: 768px;
+  height: 415px;
+  min-height: 300px;
+  background-image: url(img/rob-potter-tablet.png);
+  background-repeat: no-repeat;
+  /*margin-bottom: 55px;*/
+  /*background-size: 100%;*/
+  background-size: cover;
+} 
+
+.header__block-two {
+  padding-top: /*113px*/3vw;
+  padding-left: -25px;
+  padding-right: /*368px*/47.92vw;
+  padding-bottom: /*88px*/11.5vw;
+  max-width: /*355px*/46.22vw;
+  height: /*215px*/21vh;
+}
+
+.header__title {
+  padding-bottom: /*37px*/6vw;
+  padding-right: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: /*50px*/6.5vw;
+  line-height: /*48px*/6.25vw;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+}
+
+.header__txt{
+  padding-right: /*10px*/1.3vw;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: /*20px*/2.6vw;
+  line-height: /*19px*/2.5vw;
+}
+
+.header__arrow {
+  cursor: pointer;
+  position: relative;
+  max-width: 72px;
+  height: 0;
+  margin: 0;
+}
+
+.header__arrow div {
+  position: absolute;
+  top: 0;
+  width: /*71px*/9.2vw;
+  height: /*2px*/0.2vh;
+  background-color: #ffffff;
+}
+
+.header__arrow div::after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  top: -2px;
+  right: -2px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.header__arrow div::before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  top: 3px;
+  right: -2px;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+.section__title {
+  font-size: /*30px*/3.9vw;
+  line-height: /*29px*/3.8vw;
+  /*margin-top: 67px;*/
+  margin-bottom: 21px;
+  padding-bottom: 1px;
+} 
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.column1,
+.column2 {
+  max-width: /*275px*/35.8vw;
+  margin-bottom: 14px;
+}
+
+.column3,
+.column4,
+.col__img1170,
+.col__img1024,
+.col__img375-320,
+.column2:before,
+.column3:before, 
+.column4:before {
+  display: none;
+}
+
+.column1 {
+  margin-right: /*55px*/7.16vw;
+  /*margin-left: 69px;*/
+}
+
+.column2 {
+  margin-left: 0;
+  /*margin-right: 70px;*/
+}
+
+.col__img768 {
+  display: inline-block;
+  width: 100%;
+  max-width: /*230px*/29.95vw;
+  margin: /*0 23px 18px 28px*/0 2.99vw 2.34vw 3.64vw;
+}
+
+.col__item {
+  margin: /*0 15px 8px 15px*/0 1.95vw 1.04vw 1.95vw;
+  padding-top: /*6px*/0.78vw;
+  font-size: /*20px*/2.6vw;
+  line-height: /*19px*/2.47vw;
+}
+
+.col__item_small768 {
+  margin: /*0 0 8px 14px*/0 0 1.04vw 1.82vw;
+  padding-top: /*6px*/0.78vw;
+  font-size: /*20px*/2.6vw;
+  line-height: /*19px*/2.47vw;
+}
+
+.section__price-circles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__item {
+  display: flex;
+  justify-content: space-between;	
+}
+
+.section__price {
+  font-size: /*25px*/3.26vw;
+  line-height: /*24px*/3.12vw;
+  margin: /*0 55px 28px 15px*/0 7.16vw 3.65vw 1.95vw;
+}
+
+.section__price_small768 {
+  font-size: /*25px*/3.26vw;
+  line-height: /*24px*/3.12vw;
+  max-width: /*105px*/13.7vw;
+  margin: /*0 60px 28px 14px*/0 7.8vw 3.65vw 1.82vw;	
+}
+
+.section__item_gray,
+.section__item_red,
+.section__item_yellow,
+.section__item_black,
+.section__item_peach,
+.section__item_burgundy,
+.section__item_red768,
+.section__item_gray768 {
+  width: /*20px*/2.6vw;
+  height: 20px/*2vh*/;
+}
+
+.section__item_gray:hover,
+.section__item_red:hover,
+.section__item_yellow:hover,
+.section__item_black:hover,
+.section__item_peach:hover,
+.section__item_burgundy:hover,
+.section__item_red768:hover,
+.section__item_gray768:hover {
+  width: /*22px*/2.86vw;
+  height: /*22px*/2.6vh;
+}
+
+.section__item_gray,
+.section__item_red,
+.section__item_black,
+.section__item_peach,
+.section__item_burgundy,
+.section__item_red768,
+.section__item_gray768 {
+  margin-right: 3px;
+}
+
+/*.section__item {
+  max-width: 95px;
+}*/
+
+.section__item_red768 {
+  background: #B62E3C;
+}
+
+.section__item_gray768 {
+  background: #C4C4C4;
+}
+}
+
+@media screen and (max-width: 550px)
+and (min-width: 376px) {
+
+.body,
+.container {
+  max-width: 100%;
+  max-width: 550px;
+  min-width: 376px;
+  margin: 0 auto;
+}
+
+.body {
+  overflow-x: hidden;
+}
+
+/*.header {
+  width: 100%;
+  max-height: 379px;
+  min-height: 263px;
+}*/
+
+.header__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 31px;
+  padding-right: 32px;
+  min-height: 72px;
+}
+
+.logo-burger {
+  display: inline-block;
+  max-width: /*156px*/20.3vw;
+  margin: 0;
+  padding-top: /*42px*/5.5vw;
+  padding-bottom: /*38px*/4.9vw;
+}
+
+.logo,
+.nav,
+.nav__second,
+.form,
+.usa,
+.header__img,
+.header__img-phone {
+  display: none;
+}
+
+.wrapper {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  padding-top: /*46px*/5.99vw;
+  padding-bottom: /*42px*/5.46vw;
+}
+
+.line,
+.line1 {
+  width: /*61px*/7.9vw;
+  height: /*9px*/0.88vh;
+  background-color: #000000;
+}
+
+.line {
+  margin-bottom: /*8px*/1vw;
+}
+
+.header__image {
+  max-width: /*550px*/100vw;
+  min-height: 250px/*29vh*/;
+  height: auto;
+  background-image: url(img/rob-potter-tablet.png);
+  background-repeat: no-repeat;
+  margin-bottom: 39px;
+  background-size: cover;
+} 
+
+.header__block-two {
+  padding-top: -50vw;
+  padding-left: -50px;
+  padding-right: 47.92vw;
+  padding-bottom: 11.5vw;
+  max-width: 46.22vw;
+  height: 21vh;
+}
+
+.header__title {
+  padding-bottom: /*37px*/6vw;
+  padding-right: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: /*50px*/6.5vw;
+  line-height: /*48px*/6.25vw;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+}
+
+.header__txt{
+  padding-right: /*10px*/1.3vw;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: /*20px*/2.6vw;
+  line-height: /*19px*/2.5vw;
+}
+
+.header__arrow {
+  cursor: pointer;
+  position: relative;
+  max-width: 72px;
+  height: 0;
+  margin: 0;
+}
+
+.header__arrow div {
+  position: absolute;
+  top: 0;
+  width: /*71px*/9.2vw;
+  height: /*2px*/0.2vh;
+  background-color: #ffffff;
+}
+
+.header__arrow div::after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  top: -2px;
+  right: -2px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.header__arrow div::before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  top: 3px;
+  right: -2px;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+.section__title {
+  font-size: /*30px*/5.5vw;
+  line-height: /*29px*/5.3vw;
+  margin-bottom: /*21px*/3.8vw;
+  padding-bottom: 1px;
+} 
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.column1,
+.column2 {
+  max-width: 40vw;
+  margin-bottom: /*14px*/2.5vw;
+}
+
+.column3,
+.column4,
+.col__img1170,
+.col__img1024,
+.col__img375-320,
+.column2:before,
+.column3:before, 
+.column4:before {
+  display: none;
+}
+
+.column1 {
+  margin-right: 3vw;
+}
+
+.column2 {
+  margin-left: 0;
+}
+
+.col__img768 {
+  display: inline-block;
+  max-width: /*180px*/32.7vw;
+  margin: /*0 23px 18px 28px*/0 4.2vw 3.3vw 5.1vw;
+}
+
+.col__item {
+  margin: /*0 15px 8px 15px*/0 2.7vw 1.5vw 2.7vw;
+  padding-top: /*6px*/1.1vw;
+  font-size: /*15px*/2.7vw;
+  line-height: /*14px*/2.5vw;
+}
+
+.col__item_small768 {
+  margin: /*0 0 8px 14px*/0 0 1.5vw 2.5vw;
+  padding-top: /*6px*/1.1vw;
+  font-size: /*15px*/2.7vw;
+  line-height: /*14px*/2.5vw;
+}
+
+.section__price-circles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__item {
+  display: flex;
+  justify-content: space-between;
+  /*max-width: 95px;*/	
+}
+
+.section__price {
+  font-size: /*25px*/4.5vw;
+  line-height: /*24px*/4.3vw;
+  margin: /*0 55px 28px 15px*/0 10vw 5.1vw 2.7vw;
+}
+
+.section__price_small768 {
+  font-size: /*25px*/4.5vw;
+  line-height: /*24px*/4.3vw;
+  max-width: /*105px*/19.1vw;
+  margin: /*0 60px 28px 14px*/0 10.9vw 5.1vw 2.5vw;	
+}
+
+.section__item_gray,
+.section__item_red,
+.section__item_yellow,
+.section__item_black,
+.section__item_peach,
+.section__item_burgundy,
+.section__item_red768,
+.section__item_gray768 {
+  width: /*14px*/2.5vw;
+  height: /*14px*/2.3vw;
+}
+
+.section__item_gray:hover,
+.section__item_red:hover,
+.section__item_yellow:hover,
+.section__item_black:hover,
+.section__item_peach:hover,
+.section__item_burgundy:hover,
+.section__item_red768:hover,
+.section__item_gray768:hover {
+  width: 16px;
+  height: 16px;
+}
+
+.section__item_gray,
+.section__item_red,
+.section__item_black,
+.section__item_peach,
+.section__item_burgundy,
+.section__item_red768,
+.section__item_gray768 {
+  margin-right: 3px;
+}
+
+.section__item_red768 {
+  background: #B62E3C;
+}
+
+.section__item_gray768 {
+  background: #C4C4C4;
+}
+}
+
+@media screen and (max-width: 375px)
+and (min-width: 321px) {
+ 
+.body,
+.container {
+  max-width: 100%;
+  max-width: 375px;
+  min-width: 321px;
+  margin: 0 auto;
+}
+
+.body {
+  overflow-x: hidden;	
+}
+
+.header__block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 48px;
+  padding-right: 47px;
+  min-height: 72px;
+}
+
+.logo-burger {
+  display: inline-block;
+  max-width: 104px;
+  min-width: 104px;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 26px;
+}
+
+.logo,
+.nav,
+.nav__second,
+.form,
+.usa,
+.header__img,
+.header__img-tablet {
+  display: none;
+}
+
+.wrapper {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.line,
+.line1 {
+  width: 41px;
+  height: 6px;
+  background-color: #000000;
+}
+
+.line {
+  margin-bottom: 5px;
+}
+
+.header__image {
+  display: flex;
+  max-width: 375px;
+  height: 191px;
+  min-height: 191px;
+  background-image: url(img/rob-potter-375.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.header__block-two {
+  margin-top: -30px;
+  margin-left: -10px;
+  padding-bottom: 33px;
+  max-width: 206px;
+  height: 339px;
+}
+
+.header__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffff;
+  padding-bottom: 25px;
+  padding-right: 0;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+}
+
+.header__txt{
+  padding-right: 10px;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: 12px;
+  line-height: 11px;
+}
+
+.header__arrow div {
+  position: absolute;
+  top: 0;
+  width: 46px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.section__title {
+  font-size: 20px;
+  line-height: 19px;
+  margin-top: 33px;
+  margin-bottom: 0;
+  padding-bottom: 1px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.column1 {
+  max-width: 281px;
+  margin-bottom: 8px;
+  margin-right: 46px;
+  margin-left: 48px;
+}
+
+.column2,
+.column3,
+.column4,
+.col__img1170,
+.col__img1024,
+.col__img768 {
+  display: none;
+}
+
+.col__img375-320 {
+  display: inline-block;
+  width: 100%;
+  width: auto;
+  height: auto;
+  margin: 0 57px 17px 62px;
+}
+
+.section__price-circles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__item {
+  display: flex;
+  justify-content: space-between;	
+}
+
+.col__item {
+  margin: 0px 75px 6px 15px;
+  padding: 0;
+  font-size: 15px;
+  line-height: 14px;
+}
+
+.section__price {
+  font-size: 20px;
+  line-height: 19px;
+  margin: 0 75px 34px 14px;
+  padding-right: 30px;
+}
+
+.section__item_yellow,
+.section__item_black,
+.section__item_red768,
+.section__item_gray768 {
+  width: 15px;
+  height: 15px;
+}
+
+.section__item_yellow:hover,
+.section__item_black:hover,
+.section__item_red768:hover,
+.section__item_gray768:hover {
+  width: 17px;
+  height: 17px;
+}
+
+.section__item_black,
+.section__item_red768,
+.section__item_gray768 {
+  margin-right: 2px;
+}
+
+.section__item_yellow {
+   margin-right: 0;
+}
+
+.section__item_red768 {
+  background:  #B62E3C;
+}
+
+.section__item_gray768 {
+  background: #C4C4C4;
+}
+}
+
+@media screen 
+and (max-width: 320px) {
+
+.body,
+.container {
+  max-width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.body{
+  overflow-x: hidden;
+}
+
+.logo,
+.nav,
+.nav__second,
+.form,
+.usa,
+.header__img,
+.header__img-tablet {
+  display: none;
+}
+
+.header__block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo-burger {
+  display: inline-block;
+  max-width: /*104px*/32.5vw;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 26px;
+}
+
+.wrapper {
+  margin: 0;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.line,
+.line1 {
+  width: /*41px*/12.8vw;
+  height: 6px;
+  background-color: #000000;
+}
+
+.line {
+  margin-bottom: 5px;
+}
+
+.header__image {
+  max-width: 320px;
+  height: 191px;
+  min-height: 100px;
+  background-image: url(img/rob-potter-320.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.header__block-two {
+  position: absolute;
+}
+
+.header__title {
+  padding-top: 62px;
+  padding-right: 0;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: /*20px*/6.25vw;
+  line-height: /*19px*/5.9vw;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.header__for-txt-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 25px;
+  padding-left: 20px;
+}
+
+.header__txt{
+  padding-right: /*10px*/3.125vw;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: /*12px*/3.750vw;
+  line-height: /*11px*/3.4vw;
+}
+
+.header__arrow div {
+  position: absolute;
+  top: 0;
+  width: /*46px*/14.4vw;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.section__title {
+  font-size: /*20px*/6.3vw;
+  line-height: /*19px*/5.9vw;
+  margin-top: 33px;
+  margin-bottom: 0;
+  padding-bottom: 1px;
+} 
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.column1 {
+  max-width: /*281px*/87.8vw;
+  margin-bottom: 8px;
+}
+
+.column2,
+.column3,
+.column4,
+.col__img1170,
+.col__img1024,
+.col__img768 {
+  display: none;
+}
+
+.col__img375-320 {
+  display: flex;
+  width: 100%;
+  width: /*auto*/50.6vw;
+  height: /*auto*/51.6vw;
+  margin: /*0 57px 17px 62px*/0 17.8vw 5.3vw 19.4vw;
+}
+
+.section__price-circles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__item {
+  display: flex;
+  justify-content: space-between;	
+}
+
+.col__item {
+  margin: 0 86px 6px 15px;
+  padding: 0;
+  font-size: /*15px*/4.69vw;
+  line-height: /*14px*/4.4vw;
+  white-space: nowrap;
+}
+
+.section__price {
+  font-size: /*20px*/6.25vw;
+  line-height: /*19px*/5.9vw;
+  margin: /*0 86px 34px 15px*/0 26.9vw 10.6vw 4.7vw;
+  padding-right: /*30px*/9.4vw;
+}
+
+.section__item_yellow,
+.section__item_black,
+.section__item_red768,
+.section__item_gray768 {
+  width: /*15px*/4.69vw;
+  height: /*15px*/4.5vw;
+}
+
+.section__item_yellow:hover,
+.section__item_black:hover,
+.section__item_red768:hover,
+.section__item_gray768:hover {
+  width: 17px;
+  height: 17px;
+}
+
+.section__item_black,
+.section__item_red768,
+.section__item_gray768 {
+  margin-right: 2px;
+}
+
+.section__item_yellow {
+   margin-right: 0;
+}
+
+.section__item_red768 {
+  background:  #B62E3C;
+}
+
+.section__item_gray768 {
+  background: #C4C4C4;
+}
+}
