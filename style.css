@@ -2094,6 +2094,7 @@ and (min-width: 551px) {
 
 .header__title {
   padding-bottom: /*37px*/6vw;
+  padding-right: 0;
   font-style: normal;
   font-weight: bold;
   font-size: /*50px*/6.5vw;
@@ -2664,6 +2665,7 @@ and (min-width: 321px) {
   text-transform: uppercase;
   color: #ffff;
   padding-bottom: 25px;
+  padding-right: 0;
 }
 
 .header__for-txt-arrow{
@@ -2863,7 +2865,10 @@ and (max-width: 320px) {
 }
 
 .header__title {
-  padding: 62px 586px 15px 20px;
+  padding-top: 62px;
+  padding-right: 0;
+  padding-bottom: 15px;
+  padding-left: 20px;
   font-style: normal;
   font-weight: bold;
   font-size: /*20px*/6.25vw;
