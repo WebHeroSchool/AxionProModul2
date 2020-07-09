@@ -1,0 +1,23 @@
+@font-face {
+	font-family: "Gotham Pro", sans-serif;
+	src: url("//db.onlinewebfonts.com/t/056353a27c68233bab7e618c8b191d65.eot");
+	src: url("//db.onlinewebfonts.com/t/056353a27c68233bab7e618c8b191d65.eot?#iefix") format("embedded-opentype"),
+	     url("//db.onlinewebfonts.com/t/056353a27c68233bab7e618c8b191d65.woff2") format("woff2"),
+	     url("//db.onlinewebfonts.com/t/056353a27c68233bab7e618c8b191d65.woff") format("woff"),
+	     url("//db.onlinewebfonts.com/t/056353a27c68233bab7e618c8b191d65.ttf") format("truetype"),
+	     url("//db.onlinewebfonts.com/t/056353a27c68233bab7e618c8b191d65.svg#Gotham Pro") format("svg");
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham Pro", sans-serif;
+	src: url("//db.onlinewebfonts.com/t/056353a27c68233bab7e618c8b191d65.eot");
+	src: url("//db.onlinewebfonts.com/t/056353a27c68233bab7e618c8b191d65.eot?#iefix") format("embedded-opentype"),
+	     url("//db.onlinewebfonts.com/t/056353a27c68233bab7e618c8b191d65.woff2") format("woff2"),
+	     url("//db.onlinewebfonts.com/t/056353a27c68233bab7e618c8b191d65.woff") format("woff"),
+	     url("//db.onlinewebfonts.com/t/056353a27c68233bab7e618c8b191d65.ttf") format("truetype"),
+	     url("//db.onlinewebfonts.com/t/056353a27c68233bab7e618c8b191d65.svg#Gotham Pro") format("svg");
+	font-weight: bold;
+    font-style: normal;
+}
